@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    
+<!-- Mirrored from html.reactheme.com/muchwow/main/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Feb 2025 10:46:47 GMT -->
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign in</title>
+        <link rel="icon" type="image/png" href="https://html.reactheme.com/muchwow/favicon.ico"/>
+        <meta name="description" content="Your Ultimate Solution for Meme-Inspired Cryptocurrencies.">
+        <meta name="keywords" content="crypto, crypto ico, cryptocurrency, digital currency, ico, ico agency, ico crypto, ico landing page, ico token, meme coin, meme ico exchange, meme token, memecoin">
+        <link rel="canonical" href="https://unistudio.co/html/muchwow">
+        <meta name="theme-color" content="#FFBA00">
+
+        <!-- Open Graph Tags -->
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="MuchWOW">
+        <meta property="og:description" content="Your Ultimate Solution for Meme-Inspired Cryptocurrencies.">
+        <meta property="og:url" content="https://unistudio.co/html/muchwow/">
+        <meta property="og:site_name" content="MuchWOW">
+        <meta property="og:image" content="../../../unistudio.co/html/muchwow/assets/images/common/seo-image.jpg">
+        <meta property="og:image:width" content="1180">
+        <meta property="og:image:height" content="600">
+        <meta property="og:image:type" content="image/png">
+
+        <!-- Twitter Card Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="MuchWOW">
+        <meta name="twitter:description" content="Your Ultimate Solution for Meme-Inspired Cryptocurrencies.">
+        <meta name="twitter:image" content="../../../unistudio.co/html/muchwow/assets/images/common/seo-image.jpg">
+
+        <link rel="canonical" href="https://unistudio.co/html/muchwow/">
+
+        <!-- preload head styles -->
+        <link rel="preload" href="../assets/css/unicons.min.css" as="style">
+        <link rel="preload" href="../assets/css/swiper-bundle.min.css" as="style">
+        <link rel="preload" href="../assets/css/magic-cursor.min.css" as="style">
+
+        <!-- preload footer scripts -->
+        <link rel="preload" href="../assets/js/libs/jquery.min.js" as="script">
+        <link rel="preload" href="../assets/js/libs/scrollmagic.min.js" as="script">
+        <link rel="preload" href="../assets/js/libs/swiper-bundle.min.js" as="script">
+        <link rel="preload" href="../assets/js/libs/anime.min.js" as="script">
+        <link rel="preload" href="../assets/js/libs/typed.min.js" as="script">
+        <link rel="preload" href="../assets/js/libs/tilt.min.js" as="script">
+        <link rel="preload" href="../assets/js/libs/split-type.min.js" as="script">
+        <link rel="preload" href="../assets/js/libs/prettify.min.js" as="script">
+        <link rel="preload" href="../assets/js/libs/gsap.min.js" as="script">
+        <link rel="preload" href="../assets/js/core/magic-cursor.js" as="script">
+        <link rel="preload" href="../assets/js/helpers/data-attr-helper.js" as="script">
+        <link rel="preload" href="../assets/js/helpers/swiper-helper.js" as="script">
+        <link rel="preload" href="../assets/js/helpers/splitype-helper.js" as="script">
+        <link rel="preload" href="../assets/js/helpers/anime-helper.js" as="script">
+        <link rel="preload" href="../assets/js/helpers/typed-helper.js" as="script">
+        <link rel="preload" href="../assets/js/helpers/tilt-helper.js" as="script">
+        <link rel="preload" href="../assets/js/core/marquee.js" as="script">
+        <link rel="preload" href="../assets/js/uikit-components-bs.js" as="script">
+        <link rel="preload" href="../assets/js/app.js" as="script">
+
+        <!-- app head for bootstrap core -->
+        <script src="../assets/js/app-head-bs.js"></script>
+
+        <!-- include uni-core components -->
+        <link rel="stylesheet" href="../assets/js/uni-core/css/uni-core.min.css">
+
+        <!-- include styles -->
+        <link rel="stylesheet" href="../assets/css/unicons.min.css">
+        <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="../assets/css/prettify.min.css">
+        <link rel="stylesheet" href="../assets/css/magic-cursor.min.css">
+
+        <!-- include main style -->
+        <link rel="stylesheet" href="../assets/css/theme/theme-two.min.purge.css">
+
+        <!-- include scripts -->
+        <script src="../assets/js/uni-core/js/uni-core-bundle.min.js"></script>
+    </head>
+    <body class="uni-body panel uni-body panel bg-white text-black overflow-x-hidden disable-cursor">
+
+        <!--  GDPR modal -->
+        <div id="uc-gdpr-notification" class="uc-gdpr-notification uc-notification min-w-1/2 uc-notification-bottom-left lg:m-2">
+            <div class="uc-notification-message vstack lg:hstack items-end gap-2 lg:gap-4 lg:p-3 bg-white text-dark border rounded-1-5 min-w-1/2">
+                <a id="uc-close-gdpr-notification" class="uc-notification-close text-dark" data-uc-close></a>
+                <div class="vstack">
+                    <h2 class="h5 ft-primary fw-bold -ls-1 m-0 text-dark">GDPR Compliance</h2>
+                    <p class="fs-6 mt-1">We use cookies to ensure you get the best experience on our website. By continuing to use our site, you accept our use of cookies, <a href="page-privacy.html" class="uc-link text-underline">privacy policy</a> and <a href="page-terms.html" class="uc-link text-underline">terms of service</a>.</p>
+                </div>
+                <button class="btn btn-sm btn-primary px-2" id="uc-accept-gdpr">Accept</button>
+            </div>
+        </div>
+
+        <!--  Menu panel -->
+        <div id="uc-menu-panel" data-uc-offcanvas="overlay: true;">
+            <div class="uc-offcanvas-bar m-1 rounded-2 border border-2 border-black contrast-shadow-md bg-secondary-200 text-dark dark:bg-gray-900 dark:text-white">
+                <header class="uc-offcanvas-header hstack justify-between items-center pb-2">
+                    <div class="uc-logo">
+                        <a href="index.html" class="h5 text-none text-gray-900 dark:text-white">
+                            <img class="w-40px" src="https://html.reactheme.com/muchwow/assets/images/common/logo-mark.svg" alt="MuchWOW">
+                        </a>
+                    </div>
+                    <button class="uc-offcanvas-close rtl:end-auto rtl:start-0 m-1 mt-2 p-0 btn border-0 dark:text-white dark:text-opacity-50 hover:text-primary hover:rotate-90 duration-150 transition-all" type="button">
+                        <img class="icon icon-3" src="https://html.reactheme.com/muchwow/assets/images/icons/close.svg" alt="close" data-uc-svg>
+                    </button>
+                </header>
+
+                <div class="panel">
+                    <ul class="nav-y gap-narrow fw-medium fs-6" data-uc-nav>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                        <li><a href="#">Tokenomics</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li class="hr opacity-10 my-1"></li>
+                        <li><a href="sign-up.html">Create an account</a></li>
+                        <li><a href="sign-in.html">Log in</a></li>
+                    </ul>
+                    <ul class="nav-x gap-1 mt-4">
+                        <li>
+                            <a class="w-32px hover:-rotate-3" href="#"><img src="https://html.reactheme.com/muchwow/assets/images/common/twitter.svg" alt="twitter"></a>
+                        </li>
+                        <li>
+                            <a class="w-32px hover:-rotate-3" href="#"><img src="https://html.reactheme.com/muchwow/assets/images/common/facebook.svg" alt="facebook"></a>
+                        </li>
+                        <li>
+                            <a class="w-32px hover:-rotate-3" href="#"><img src="https://html.reactheme.com/muchwow/assets/images/common/youtube.svg" alt="youtube"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--  Bottom Actions Sticky -->
+        <div class="backtotop-wrap position-fixed bottom-0 end-0 z-99 m-2 vstack">
+            <a class="btn btn-sm p-0 bg-yellow text-black border border-2 border-black contrast-shadow-sm w-48px h-48px rounded-circle" href="to_top.html" data-uc-backtotop>
+                <img class="icon icon-3" src="https://html.reactheme.com/muchwow/assets/images/icons/chevron-up.svg" alt="to-top" data-uc-svg>
+            </a>
+        </div>
+
+        <!-- Header start -->
+        <header class="uc-header header-two uc-navbar-sticky-wrap z-999" data-uc-sticky="start: 100vh; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;">
+            <nav class="uc-navbar-container bg-transparent mt-3 xl:mt-4 ft-tertiary z-1" data-anime="translateY: [-40, 0]; opacity: [0, 1]; duration: 750; delay: 0;">
+                <div class="uc-navbar-main" style="--uc-nav-height: 100px">
+                    <div class="container">
+                        <div class="uc-navbar min-h-64px lg:min-h-80px xl:min-h-100px ps-2 pe-1 lg:px-4 border border-2 border-black contrast-shadow-md rounded-2 lg:rounded-3" data-uc-navbar=" animation: uc-animation-slide-top-small; duration: 150;" style="background-color: #98cefb">
+                            <div class="uc-navbar-left">
+                                <div class="uc-logo">
+                                    <a class="panel text-none w-150px xl:w-auto" href="home-two.html">
+                                        <img src="https://html.reactheme.com/muchwow/assets/images/logo-light.svg" alt="MuchWOW">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="uc-navbar-center">
+                                <ul class="uc-navbar-nav fs-5 xl:fs-4 gap-3 lg:gap-4 d-none lg:d-flex fw-semibold" data-uc-scrollspy-nav="closet: > *; offset: 48; scroll: true;">
+                                    <li><a href="home-two.html#about">About</a></li>
+                                    <li><a href="home-two.html#features">Features</a></li>
+                                    <li><a href="home-two.html#roadmap">Roadmap</a></li>
+                                    <li><a href="home-two.html#tokenomics">Tokenomics</a></li>
+                                    <li><a href="home-two.html#faq">FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="uc-navbar-right">
+                                <a class="btn btn-sm xl:btn-md btn-secondary border border-2 border-black contrast-shadow-sm -rotate-2 hover:rotate-0 d-none lg:d-inline-flex" href="page-contact.html">
+                                    <span>Get in touch</span>
+                                </a>
+                                <a class="btn btn-md btn-secondary w-48px h-48px p-0 border border-2 border-black contrast-shadow-sm d-inline-flex lg:d-none" href="#uc-menu-panel" data-uc-toggle>
+                                    <img class="icon icon-3" src="https://html.reactheme.com/muchwow/assets/images/icons/menu.svg" alt="menu" data-uc-svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Header end -->
+
+        <!-- Wrapper start -->
+        <div id="wrapper" class="wrap">
+            <div class="section py-6 lg:py-9 xl:py-10 border-bottom">
+                <div class="container max-w-xl">
+                    <div class="panel vstack justify-center items-center gap-2 sm:gap-4 text-center" data-anime="targets: >*; translateY: [24, 0]; opacity: [0, 1]; delay: anime.stagger(100, {start: 200});">
+                        <h1 class="h3 md:h2 ls-0 m-0">Sign in</h1>
+                        <div class="panel w-100 sm:w-350px">
+                            <form class="vstack gap-2">
+                                <input class="form-control h-48px w-full bg-white dark:bg-opacity-0 dark:text-white dark:border-gray-300 dark:border-opacity-30" type="email" placeholder="Your email" required>
+                                <input class="form-control h-48px w-full bg-white dark:bg-opacity-0 dark:text-white dark:border-gray-300 dark:border-opacity-30" type="password" placeholder="Password" required>
+                                <div class="hstack justify-between text-start">
+                                    <div class="form-check text-start rtl:text-end">
+                                        <input id="uc_form_remember_me" class="form-check-input rounded-0 bg-white dark:bg-opacity-0 dark:text-white dark:border-gray-300 dark:border-opacity-30" type="checkbox">
+                                        <label for="uc_form_remember_me" class="hstack justify-between form-check-label fs-6">Remember me?</label>
+                                    </div>
+                                    <a href="reset-password.html" class="uc-link border-bottom">Forgot password</a>
+                                </div>
+                                <button class="btn btn-sm xl:btn-md btn-secondary border border-2 border-black contrast-shadow-sm d-none lg:d-inline-flex mt-2" type="submit">Log in</button>
+                            </form>
+                        </div>
+                        <p>Have no account yet? <a class="uc-link border-bottom" href="sign-up.html">Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wrapper end -->
+
+        <!-- Footer start -->
+        <footer id="uc-footer" class="uc-footer panel overflow-hidden text-black ft-tertiary">
+            <div class="footer-outer py-4 lg:py-6 xl:pt-10 xl:pb-9 bg-white">
+                <div class="uc-footer-content">
+                    <div class="container">
+                        <div class="uc-footer-inner vstack gap-4 lg:gap-6 xl:gap-8">
+                            <div class="uc-footer-widgets panel">
+                                <div class="row g-6 lg:g-8 xl:g-10">
+                                    <div class="col-12 lg:col-4">
+                                        <div class="panel vstack items-start gap-3 xl:gap-4">
+                                            <div>
+                                                <a href="index.html" style="width: 140px">
+                                                    <img src="https://html.reactheme.com/muchwow/assets/images/logo-light.svg" alt="MuchWOW">
+                                                </a>
+                                                <p class="fs-6 mt-2 fw-medium">MUCH WOW TOKEN emerged as the ultimate celebration of community and creativity in the crypto space!</p>
+                                                <ul class="nav-x gap-2 mt-4">
+                                                    <li>
+                                                        <a class="w-40px hover:-rotate-3" href="#"><img src="https://html.reactheme.com/muchwow/assets/images/common/twitter.svg" alt="twitter"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="w-40px hover:-rotate-3" href="#"><img src="https://html.reactheme.com/muchwow/assets/images/common/facebook.svg" alt="facebook"></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lg:col">
+                                        <div class="panel">
+                                            <div class="row child-cols-6 lg:child-cols-3 g-4">
+                                                <div>
+                                                    <ul class="nav-y gap-2 fw-bold fs-6">
+                                                        <li><a href="#" class="pb-narrow border-bottom border-gray-200">About us</a></li>
+                                                        <li><a href="#" class="pb-narrow border-bottom border-gray-200">How it works?</a></li>
+                                                        <li><a href="#" class="pb-narrow border-bottom border-gray-200">Roadmap</a></li>
+                                                        <li><a href="#" class="pb-narrow border-bottom border-gray-200">Tokenomics</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <ul class="nav-y gap-2 fw-bold fs-6">
+                                                        <li><a href="#" class="pb-narrow border-bottom border-gray-200">Buy Tokens</a></li>
+                                                        <li><a href="#" class="pb-narrow border-bottom border-gray-200">Contact Address</a></li>
+                                                        <li><a href="#" class="pb-narrow border-bottom border-gray-200">Events</a></li>
+                                                        <li><a href="#" class="pb-narrow border-bottom border-gray-200">Contact us</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <ul class="nav-y gap-2 fw-bold fs-6">
+                                                        <li><a href="#" class="pb-narrow border-bottom border-gray-200">Advertisers</a></li>
+                                                        <li><a href="#" class="pb-narrow border-bottom border-gray-200">Newsletter</a></li>
+                                                        <li><a href="#" class="pb-narrow border-bottom border-gray-200">Developers</a></li>
+                                                        <li><a href="#" class="pb-narrow border-bottom border-gray-200">Resrouces</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <ul class="nav-y gap-2 fw-bold fs-6">
+                                                        <li><a href="#" class="pb-narrow border-bottom border-gray-200">Connect your wallet</a></li>
+                                                        <li><a href="#" class="pb-narrow border-bottom border-gray-200">Licenses</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uc-footer-bottom panel vstack sm:hstack gap-2 justify-between items-center text-center pt-4 border-top">
+                                <p>MuchWOW © 2025, All rights reserved.</p>
+                                <ul class="nav-x gap-1">
+                                    <li><a href="page-privacy.html">Privacy policy</a></li>
+                                    <li class="mx-2 lg:mx-3"><a href="page-terms.html">Terms of use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer end -->
+
+        <!-- include jquery & bootstrap js -->
+        <script defer src="../assets/js/libs/jquery.min.js"></script>
+        <script defer src="../assets/js/libs/bootstrap.min.js"></script>
+
+        <!-- include scripts -->
+        <script defer src="../assets/js/libs/anime.min.js"></script>
+        <script defer src="../assets/js/libs/swiper-bundle.min.js"></script>
+        <script defer src="../assets/js/libs/scrollmagic.min.js"></script>
+        <script defer src="../assets/js/libs/typed.min.js"></script>
+        <script defer src="../assets/js/libs/tilt.min.js"></script>
+        <script defer src="../assets/js/libs/split-type.min.js"></script>
+        <script defer src="../assets/js/libs/prettify.min.js"></script>
+        <script defer src="../assets/js/libs/gsap.min.js"></script>
+        <script defer src="../assets/js/core/magic-cursor.js"></script>
+        <script defer src="../assets/js/helpers/data-attr-helper.js"></script>
+        <script defer src="../assets/js/helpers/swiper-helper.js"></script>
+        <script defer src="../assets/js/helpers/splitype-helper.js"></script>
+        <script defer src="../assets/js/helpers/anime-helper.js"></script>
+        <script defer src="../assets/js/helpers/typed-helper.js"></script>
+        <script defer src="../assets/js/helpers/tilt-helper.js"></script>
+        <script defer src="../assets/js/core/marquee.js"></script>
+        <script defer src="../assets/js/uikit-components-bs.js"></script>
+
+        <!-- include app script -->
+        <script defer src="../assets/js/app.js"></script>
+
+        <script>
+            // Schema toggle via URL
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const getSchema = urlParams.get("schema");
+            if (getSchema === "dark") {
+                setDarkMode(1);
+            } else if (getSchema === "light") {
+                setDarkMode(0);
+            }
+        </script>
+    </body>
+
+<!-- Mirrored from html.reactheme.com/muchwow/main/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Feb 2025 10:46:48 GMT -->
+</html>
