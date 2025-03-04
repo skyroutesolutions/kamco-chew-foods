@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "bilgres";
+  src: url(/assets/fonts/Bilgres-DEMO.otf);
+}
+
+@font-face {
+  font-family: "aeonik";
+  src: url(/assets/fonts/AeonikFono-Regular.otf);
+}
+
+#bilgres-font{
+  font-family: "bilgres !important";
+}
+
+#getInTouch :hover{
+  border: 10px solid green;
+}
+
+.hero-band-text{
+  -webkit-text-stroke: 2.5px black;
+}
+
+#landing-page-chocostick {
+  animation: float 3s ease-in-out infinite;
+}
+
+#landing-page-teddy{
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+#quality-matters-el1{
+  height: 100px;
+  position: absolute;
+  bottom: -33px;
+  right: -85px;
+  animation: rotate 3s ease-in-out infinite;
+}
+
+#yellow-packet{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 270px;
+  z-index: 99;
+  /* transform: rotate(20deg); */
+  animation: float 3s ease-in-out infinite;
+}
+
+#cremefills-candy{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 200px;
+  z-index: 99;
+  /* transform: rotate(20deg); */
+  animation: rotate 3s ease-in-out infinite;
+}
+
+#float-horizontal{
+  position: absolute;
+  animation: lefttoright 3s ease-in-out infinite;
+}
+
+.feature-el1{
+  top: 11%;
+  left: -30px;
+}
+
+.feature-el2{
+  bottom: 6%;
+  right: 0px;
+}
+
+@keyframes lefttoright {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+  
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+	}
+	50% {
+    transform: translatey(-20px);
+	}
+	100% {
+    transform: translatey(0px);
+	}
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-10deg);
+	}
+	50% {
+    transform: rotate(5deg);
+	}
+	100% {
+    transform: rotate(-10deg);
+	}
+}
+
+@keyframes bounceStick {
+  0%, 100% {
+    transform: translateY(0) rotate(-15deg);
+  }
+  50% {
+    transform: translateY(-40px) rotate(-15deg);
+  }
+}
+
+
+@keyframes bounceTeddy {
+  0%, 50%, 100% {
+    transform: translateY(0) ;
+  }
+  40% {
+    transform: translateY(-30px) ;
+  }
+  60% {
+    transform: translateY(-15px) ;
+  }
+  
+}
+
+@media screen and (max-width: 768px){
+  .section-inner{
+    padding-top: 30px;
+  }
+}

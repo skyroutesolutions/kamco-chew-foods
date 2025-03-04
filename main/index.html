@@ -1,61 +1,784 @@
 <!DOCTYPE html>
-<html lang="en-us" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
-
+<html lang="en" dir="ltr">
+    
+<!-- Mirrored from html.reactheme.com/muchwow/main/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Feb 2025 10:46:34 GMT -->
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <style type="text/css">
-        @charset "UTF-8";
-        [ng\:cloak],
-        [ng-cloak],
-        [data-ng-cloak],
-        [x-ng-cloak],
-        .ng-cloak,
-        .x-ng-cloak,
-        .ng-hide:not(.ng-hide-animate) {
-            display: none !important;
-        }
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MuchWOW</title>
+        <link rel="icon" type="image/png" href="https://html.reactheme.com/muchwow/favicon.ico"/>
+        <meta name="description" content="Your Ultimate Solution for Meme-Inspired Cryptocurrencies.">
+        <meta name="keywords" content="crypto, crypto ico, cryptocurrency, digital currency, ico, ico agency, ico crypto, ico landing page, ico token, meme coin, meme ico exchange, meme token, memecoin">
+        <link rel="canonical" href="https://unistudio.co/html/muchwow">
+        <meta name="theme-color" content="#FFBA00">
 
-        ng\:form {
-            display: block;
-        }
+        <!-- Open Graph Tags -->
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="MuchWOW">
+        <meta property="og:description" content="Your Ultimate Solution for Meme-Inspired Cryptocurrencies.">
+        <meta property="og:url" content="https://unistudio.co/html/muchwow/">
+        <meta property="og:site_name" content="MuchWOW">
+        <meta property="og:image" content="../../../unistudio.co/html/muchwow/assets/images/common/seo-image.jpg">
+        <meta property="og:image:width" content="1180">
+        <meta property="og:image:height" content="600">
+        <meta property="og:image:type" content="image/png">
 
-        .ng-animate-shim {
-            visibility: hidden;
-        }
+        <!-- Twitter Card Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="MuchWOW">
+        <meta name="twitter:description" content="Your Ultimate Solution for Meme-Inspired Cryptocurrencies.">
+        <meta name="twitter:image" content="../../../unistudio.co/html/muchwow/assets/images/common/seo-image.jpg">
 
-        .ng-anchor {
-            position: absolute;
-        }
-    </style>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Oops, something lost</title>
-    <meta name="description" content="Oops, looks like the page is lost. Start your website on the cheap.">
-    <link media="all" rel="stylesheet" href="/htdocs_error/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <link rel="canonical" href="https://unistudio.co/html/muchwow/">
 
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        <!-- preload head styles -->
+        <link rel="preload" href="../assets/css/unicons.min.css" as="style">
+        <link rel="preload" href="../assets/css/swiper-bundle.min.css" as="style">
+        <link rel="preload" href="../assets/css/magic-cursor.min.css" as="style">
 
-        ga('create', 'UA-26575989-46', 'auto');
-        ga('send', 'pageview');
+        <!-- preload footer scripts -->
+        <link rel="preload" href="../assets/js/libs/jquery.min.js" as="script">
+        <link rel="preload" href="../assets/js/libs/scrollmagic.min.js" as="script">
+        <link rel="preload" href="../assets/js/libs/swiper-bundle.min.js" as="script">
+        <link rel="preload" href="../assets/js/libs/anime.min.js" as="script">
+        <link rel="preload" href="../assets/js/libs/typed.min.js" as="script">
+        <link rel="preload" href="../assets/js/libs/tilt.min.js" as="script">
+        <link rel="preload" href="../assets/js/libs/split-type.min.js" as="script">
+        <link rel="preload" href="../assets/js/libs/prettify.min.js" as="script">
+        <link rel="preload" href="../assets/js/libs/gsap.min.js" as="script">
+        <link rel="preload" href="../assets/js/core/magic-cursor.js" as="script">
+        <link rel="preload" href="../assets/js/helpers/data-attr-helper.js" as="script">
+        <link rel="preload" href="../assets/js/helpers/swiper-helper.js" as="script">
+        <link rel="preload" href="../assets/js/helpers/splitype-helper.js" as="script">
+        <link rel="preload" href="../assets/js/helpers/anime-helper.js" as="script">
+        <link rel="preload" href="../assets/js/helpers/typed-helper.js" as="script">
+        <link rel="preload" href="../assets/js/helpers/tilt-helper.js" as="script">
+        <link rel="preload" href="../assets/js/core/marquee.js" as="script">
+        <link rel="preload" href="../assets/js/uikit-components-bs.js" as="script">
+        <link rel="preload" href="../assets/js/app.js" as="script">
 
-    </script>
-</head>
+        <!-- app head for bootstrap core -->
+        <script src="../assets/js/app-head-bs.js"></script>
 
-<body>
+        <!-- include uni-core components -->
+        <link rel="stylesheet" href="../assets/js/uni-core/css/uni-core.min.css">
 
-    <div class="error" id="error">
-            <div class="container">
-                <div class="content centered"><img style="width:500px;" src="/htdocs_error/something-lost.png">
-                    <h1>Oops, looks like the page is lost.</h1>
-                    <p style="font-size:22px;" class="sub-header text-block-narrow">This is not a fault, just an accident that was not intentional.</p>
+        <!-- include styles -->
+        <link rel="stylesheet" href="../assets/css/unicons.min.css">
+        <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="../assets/css/prettify.min.css">
+        <link rel="stylesheet" href="../assets/css/magic-cursor.min.css">
+
+        <!-- include main style -->
+        <link rel="stylesheet" href="../assets/css/theme/theme-two.min.purge.css">
+
+        <link rel="stylesheet" href="/assets/css/style.css">
+
+        <!-- include scripts -->
+        <script src="../assets/js/uni-core/js/uni-core-bundle.min.js"></script>
+    </head>
+    <body class="uni-body panel uni-body panel bg-white text-black overflow-x-hidden disable-cursor">
+
+        <!--  GDPR modal -->
+        <div id="uc-gdpr-notification" class="uc-gdpr-notification uc-notification min-w-1/2 uc-notification-bottom-left lg:m-2">
+            <div class="uc-notification-message vstack lg:hstack items-end gap-2 lg:gap-4 lg:p-3 bg-white text-dark border rounded-1-5 min-w-1/2">
+                <a id="uc-close-gdpr-notification" class="uc-notification-close text-dark" data-uc-close></a>
+                <div class="vstack">
+                    <h2 class="h5 ft-primary fw-bold -ls-1 m-0 text-dark">GDPR Compliance</h2>
+                    <p class="fs-6 mt-1">We use cookies to ensure you get the best experience on our website. By continuing to use our site, you accept our use of cookies, <a href="page-privacy.html" class="uc-link text-underline">privacy policy</a> and <a href="page-terms.html" class="uc-link text-underline">terms of service</a>.</p>
                 </div>
+                <button class="btn btn-sm btn-primary px-2" id="uc-accept-gdpr">Accept</button>
+            </div>
         </div>
-</body>
 
+        <!--  Menu panel -->
+        <div id="uc-menu-panel" data-uc-offcanvas="overlay: true;">
+            <div class="uc-offcanvas-bar m-1 rounded-2 border border-2 border-black contrast-shadow-md bg-secondary-200 text-dark dark:bg-gray-900 dark:text-white">
+                <header class="uc-offcanvas-header hstack justify-between items-center pb-2">
+                    <div class="uc-logo">
+                        <a href="index.html" class="h5 text-none text-gray-900 dark:text-white">
+                            <img class="w-50px" src="/assets/images/kamco-logo-version1.svg" alt="MuchWOW">
+                        </a>
+                    </div>
+                    <button class="uc-offcanvas-close rtl:end-auto rtl:start-0 m-1 mt-2 p-0 btn border-0 dark:text-white dark:text-opacity-50 hover:text-primary hover:rotate-90 duration-150 transition-all" type="button">
+                        <img class="icon icon-3" src="https://html.reactheme.com/muchwow/assets/images/icons/close.svg" alt="close" data-uc-svg>
+                    </button>
+                </header>
+
+                <div class="panel">
+                    <ul class="nav-y gap-narrow fw-medium fs-6" data-uc-nav>
+                        <li><a href="sign-up.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li class="hr opacity-10 my-1"></li>
+                    </ul>
+                    <ul class="nav-x gap-1 mt-4">
+                        <li>
+                            <a class="w-32px hover:-rotate-3" href="https://www.facebook.com/p/Kamco-Chew-Foods-100063781970067"><img src="https://html.reactheme.com/muchwow/assets/images/common/facebook.svg" alt="facebook"></a>
+                        </li>
+                        <li>
+                            <a class="w-32px hover:-rotate-3" href="https://www.instagram.com/kamcochewfoods/?hl=en"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111421.png" alt="instagram"></a>
+                        </li>
+                        <li>
+                            <a class="w-32px hover:-rotate-3" href="https://www.youtube.com/@kamcochewfoods2106"><img src="https://html.reactheme.com/muchwow/assets/images/common/youtube.svg" alt="youtube"></a>
+                        </li>
+                        <li>
+                            <a class="w-32px hover:-rotate-3" href="https://www.linkedin.com/kamco-chew-food-private-limited?_l=en_US"><img src="https://live.staticflickr.com/8296/7749079740_113c14cc98_w.jpg" alt="twitter"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--  Bottom Actions Sticky -->
+        <div class="backtotop-wrap position-fixed bottom-0 end-0 z-99 m-2 vstack">
+            <a class="btn btn-sm p-0 bg-yellow text-black border border-2 border-black contrast-shadow-sm w-48px h-48px rounded-circle" href="to_top.html" data-uc-backtotop>
+                <img class="icon icon-3" src="https://html.reactheme.com/muchwow/assets/images/icons/chevron-up.svg" alt="to-top" data-uc-svg>
+            </a>
+        </div>
+
+        <!-- Header start -->
+        <header class="uc-header header-two uc-navbar-sticky-wrap z-999 uc-dark" data-uc-sticky="start: 100vh; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;">
+            <nav class="uc-navbar-container bg-transparent mt-3 xl:mt-4 uc-navbar-float ft-tertiary z-1" data-anime="translateY: [-40, 0]; opacity: [0, 1]; duration: 750; delay: 0;">
+                <div class="uc-navbar-main" style="--uc-nav-height: 100px">
+                    <div class="container">
+                        <div style="background-color: #E31E23; backdrop-filter: blur(5px); padding: 10px;" class="uc-navbar min-h-64px lg:min-h-80px xl:min-h-100px ps-2 pe-1 lg:px-4 border border-2 border-black contrast-shadow-md rounded-2 lg:rounded-3" data-uc-navbar=" animation: uc-animation-slide-top-small; duration: 150;" >
+                            <div class="uc-navbar-left">
+                                <div class="uc-logo">
+                                    <a class="panel text-none w-150px xl:w-auto" href="index.html">
+                                        <img src="/assets/images/kamco-logo-version2.svg" style="height: 80px; filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.492));" alt="MuchWOW">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="uc-navbar-center">
+                                <ul style="color: white; font-family: aeonik;" class="uc-navbar-nav fs-5 xl:fs-4 gap-3 lg:gap-4 d-none lg:d-flex fw-semibold" data-uc-scrollspy-nav="closet: > *; offset: 48; scroll: true;">
+                                    <li><a href="index.html#about">About</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="index.html#faq">FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="uc-navbar-right">
+                                <a style="background-color: white; color: #E31E23; font-family: aeonik;" class="btn btn-sm xl:btn-md btn-secondary border border-2 border-black contrast-shadow-sm -rotate-2 hover:rotate-0 d-none lg:d-inline-flex" href="contact.html">
+                                    <span>Get in touch</span>
+                                </a>
+                                <a style="background-color: #F6B149;" class="btn btn-md btn-secondary w-48px h-48px p-0 border border-2 border-black contrast-shadow-sm d-inline-flex lg:d-none" href="#uc-menu-panel" data-uc-toggle>
+                                    <img class="icon icon-3" src="https://html.reactheme.com/muchwow/assets/images/icons/menu.svg" alt="menu" data-uc-svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Header end -->
+
+        <!-- Wrapper start -->
+        <div id="wrapper" class="wrap">
+
+            <!-- Hero start -->
+            <div id="hero_header" class="hero-header section panel overflow-hidden">
+                <div class="section-outer py-9 lg:py-10" style="background-color: #FCE8E8; height: 130vh;">
+                    <img id="landing-page-chocostick" style="height: 85%; position: absolute; left: 70px; bottom: -30px;" src="/assets/images/elements/chocostick.png" alt="Image">
+                    <img id="landing-page-teddy" style="height: 30%; position: absolute; right: 10px; top: 80px; transform: rotate(20deg);" src="/assets/images/elements/teddyCookie.png" alt="Image"> 
+                    <img style="width: 100%;" class="position-absolute bottom-0" src="/assets/images/bg/img3.png" alt="Image">
+                    <div class="container">
+                        <div class="section-inner panel">
+                            <div class="panel vstack items-center gap-2 lg:gap-3 xl:gap-4 max-w-md mx-auto text-center px-2 lg:px-0 mt-6 lg:mt-8 xl:mt-9" data-uc-height-viewport="media: @xl;" data-anime="targets: >*; translateY: [24, 0]; opacity: [0, 1]; delay: anime.stagger(100, {start: 200});">
+                                <h1 style="font-family: bilgres;" class="uc-accordion-title h2 xl:h2 mb-0 ls-0">
+                                    More Than Just a Treat, <br class="d-none sm:d-block">
+                                    Taste the Pinnacle of Flavor
+                                </h1>
+                                <p class="fs-6 sm:fs-5 xl:fs-4 mb-2">In a world where every sweet treat tells a story, Kamco Confectionery stands
+                                    as a pioneering force in the confectionery industry.</p>
+                                <div>
+                                    <a style="background-color: white; color: #E31E23; font-family: aeonik;" class="btn btn-md lg:btn-xl xl:btn-2xl btn-secondary px-3 mt-1 sm:mt-2 border border-2 border-black contrast-shadow-sm -rotate-2 hover:rotate-0" href="contact.html">
+                                        <span>Order now🍫</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero end -->
+
+            <!-- Text Marquee Start -->
+            <div class="h3 xl:h2 fw-medium py-4 xl:py-6 reverse bg-secondary text-black text-uppercase ls-0" data-uc-marquee="clone: 3; gap: 64;" style="--gap: 32px; background-color: #E31E23 !important; color: white !important; font-family: bilgres; border: 3.2px solid black;">
+                <div>
+                    <div class="hstack gap-8">
+                        <div>
+                            🍫
+                        </div>
+                        <span class="hero-band-text">Kamco</span>
+                        <div>
+                            🍫
+                        </div>
+                        <span class="hero-band-text">Chew</span>
+                        <div>
+                            🍫
+                        </div>
+                        <span class="hero-band-text">Foods</span>
+                    </div>
+                    <div class="hstack gap-8">
+                        <div>
+                            🍫
+                        </div>
+                        <span class="hero-band-text">Kamco</span>
+                        <div>
+                            🍫
+                        </div>
+                        <span class="hero-band-text">Chew</span>
+                        <div>
+                            🍫
+                        </div>
+                        <span class="hero-band-text">Foods</span>
+                    </div>
+                    <div class="hstack gap-8">
+                        <div>
+                            🍫
+                        </div>
+                        <span class="hero-band-text">Kamco</span>
+                        <div>
+                            🍫
+                        </div>
+                        <span class="hero-band-text">Chew</span>
+                        <div>
+                            🍫
+                        </div>
+                        <span class="hero-band-text">Foods</span>
+                    </div>
+                    <div class="hstack gap-8">
+                        <div>
+                            🍫
+                        </div>
+                        <span class="hero-band-text">Kamco</span>
+                        <div>
+                            🍫
+                        </div>
+                        <span class="hero-band-text">Chew</span>
+                        <div>
+                            🍫
+                        </div>
+                        <span class="hero-band-text">Foods</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text Marquee end -->
+
+            <!-- Section start -->
+            <div id="about" class="about section panel overflow-hidden">
+                <div class="section-outer panel py-6 sm:py-8 lg:py-9 xl:py-10">
+                    <div class="container sm:max-w-lg xl:max-w-2xl">
+                        <div class="section-inner panel">
+                            <div class="section-content panel">
+                                <div class="row child-cols-12 justify-center items-center g-5 sm:g-7 lg:g-9" data-anime="onview: -400; targets: >*; translateY: [24, 0]; opacity: [0, 1]; delay: anime.stagger(100, {start: 200});">
+                                    <div class="col-11 sm:col-10 lg:col">
+                                        <div class="about-image panel p-7 border border-2 border-black contrast-shadow-xl text-black -rotate-2">
+                                            <img src="/assets/images/kamco-img-4.jpg" alt="Image">
+                                        </div>
+                                    </div>
+                                    <div class="lg:col">
+                                        <div class="about-content vstack items-center gap-3 sm:gap-4 text-center">
+                                            <p style="font-family: bilgres !important;" class="uc-accordion-title h5 sm:h3 xl:h2 mb-0 ls-0 text-uppercase -rotate-1">
+                                                <span style="z-index: 99;">Quality matters</span>
+                                                <img id="quality-matters-el1" src="/assets/images/elements/single-teddy.png" alt="">
+                                            </p>
+                                            <div class="desc">
+                                                <p class="fs-6 sm:fs-5 xl:fs-4 mb-2">In a world where every sweet treat tells a story, Kamco Confectionery stands
+                                                    as a pioneering force in the confectionery industry.</p>
+                                                <p class="fs-6 sm:fs-5 xl:fs-4">With a rich history and a
+                                                    forward looking perspective, we are dedicated to crafting confections that
+                                                    bring joy and satisfaction to every customer. 🌟</p>
+                                            </div>
+                                            <div class="buttons hstack justify-center gap-2 xl:gap-3">
+                                                <a style="background-color: #E31E23; color: white; font-family: aeonik;" class="btn btn-md xl:btn-2xl btn-secondary px-3 border border-2 border-black contrast-shadow-sm hover:-rotate-2" href="#">
+                                                    <span>Taste now</span>
+                                                </a>
+                                                <a style="background-color: #FCE8E8; color: #E31E23;" class="btn btn-primary-200 w-48px h-48px xl:w-64px xl:h-64px border border-2 border-black contrast-shadow-sm hover:-rotate-2" href="https://www.instagram.com/kamcochewfoods/?hl=en">
+                                                    <i class="icon-2 xl:icon-3 unicon-logo-instagram-filled"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-footer mt-6 sm:mt-8 lg:mt-9 xl:mt-10 text-center" data-anime="onview: -200; translateY: [24, 0]; opacity: [0, 1]; delay: 200;">
+                                <div class="row child-cols-6 sm:child-cols-4 justify-center gx-0 gy-2">
+                                    <div class="col sm:col-4 order-1 sm:order-0">
+                                        <h2 style="color: #E31E23; font-family: aeonik !important;" class="h2 sm:h1 xl:display-6 mb-1 xl:mb-2">25+</h2>
+                                        <span style="font-family: aeonik; font-weight: bold;" class="fs-6 sm:fs-5 xl:fs-4">Countries</span>
+                                    </div>
+                                    <div class="order-0">
+                                        <h2 style="color: #E31E23; font-family: aeonik !important;" class="h2 sm:h1 xl:display-6 mb-1 xl:mb-2">700+</h2>
+                                        <span style="font-family: aeonik; font-weight: bold;" class="fs-6 sm:fs-5 xl:fs-4">International clients</span>
+                                    </div>
+                                    <div class="order-0">
+                                        <h2 style="color: #E31E23; font-family: aeonik !important;" class="h2 sm:h1 xl:display-6 mb-1 xl:mb-2">3000+</h2>
+                                        <span style="font-family: aeonik; font-weight: bold;" class="fs-6 sm:fs-5 xl:fs-4">SKUs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section end -->
+
+            <!-- Thik hai?  -->
+
+            <!-- Section start -->
+            <div id="features" class="features section panel">
+                <div class="section-outer panel py-6 sm:py-8 lg:py-9 xl:py-10" style="background-color: rgb(255, 218, 127, 0.6) ; border: 4px solid black; border-radius: 20px; margin: 20px; position: relative; overflow: hidden;">
+                    <!-- <img id="yellow-packet" src="/assets/images/products/peanut-cremefills.png" alt="victor" style="position: absolute; bottom: 30px; right: 30px; height: 270px; transform: rotate(20deg); z-index: 99;"> -->
+                    <img id="yellow-packet" src="/assets/images/products/peanut-cremefills.png" alt="victor">
+                    <img id="float-horizontal" class="feature-el1 w-250px xl:w-auto" src="https://html.reactheme.com/muchwow/assets/images/common/cloud-01.svg" alt="victor">
+                    <img id="float-horizontal" class="feature-el2 w-200px xl:w-auto" src="https://html.reactheme.com/muchwow/assets/images/common/cloud-02.svg" alt="victor" >
+                    <div class="container sm:max-w-lg xl:max-w-xl">
+                        <div class="section-inner panel">
+                            <div class="section-header panel sm:max-w-500px xl:max-w-800px mx-auto mb-4 sm:mb-6 xl:mb-9 text-center" data-anime="onview: true; translateY: [48, 0]; opacity: [0, 1]; delay: 200;">
+                                <h2 class="uc-accordion-title h4 sm:h3 xl:h2 m-0 rotate-2 text-uppercase ls-0">Why Choose Kamco Chew Foods? 🍬</h2>
+                            </div>
+                            <div class="section-content panel text-center">
+                                <div class="row child-cols-12 sm:child-cols-6 lg:child-cols-4 justify-center g-3 lg:g-4 xl:g-4 col-match" data-anime="onview: -400; targets: >*; translateY: [24, 0]; opacity: [0, 1]; delay: anime.stagger(100, {start: 200});">
+                                    
+                                    <div>
+                                        <div style="border-radius: 20px;" class="features-item panel vstack gap-4 xl:gap-6 px-4 py-6 xl:px-5 xl:py-8 border border-2 border-black contrast-shadow-md text-black bg-white rotate-1">
+                                            <div class="feature-item-image">
+                                                <img class="image h-100px xl:h-150px mx-auto" src="https://cdn-icons-png.flaticon.com/256/1474/1474713.png" alt="Wide Product Range">
+                                            </div>
+                                            <div class="feature-item-content">
+                                                <h4 style="color: #E31E23; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;" class="h5 xl:h4 mb-2 xl:mb-3">WIDE PRODUCT RANGE</h4>
+                                                <p style="font-family: aeonik;" class="desc fs-5 xl:fs-4">From chocolates to gums, we manufacture a diverse range of confectionery items.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div>
+                                        <div style="border-radius: 20px;" class="features-item panel vstack gap-4 xl:gap-6 px-4 py-6 xl:px-5 xl:py-8 border border-2 border-black contrast-shadow-md text-black bg-white -rotate-1">
+                                            <div class="feature-item-image">
+                                                <img class="image h-100px xl:h-150px mx-auto" src="https://www.pngkit.com/png/full/269-2694993_high-quality-logo-transparent.png" alt="High Quality Standards">
+                                            </div>
+                                            <div class="feature-item-content">
+                                                <h4 style="color: #E31E23; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;" class="h5 xl:h4 mb-2 xl:mb-3">PREMIUM QUALITY</h4>
+                                                <p style="font-family: aeonik;" class="desc fs-5 xl:fs-4">Our products meet international quality standards, ensuring the best taste and safety.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div>
+                                        <div style="border-radius: 20px;" class="features-item panel vstack gap-4 xl:gap-6 px-4 py-6 xl:px-5 xl:py-8 border border-2 border-black contrast-shadow-md text-black bg-white rotate-1">
+                                            <div class="feature-item-image">
+                                                <img class="image h-100px xl:h-150px mx-auto" src="https://technoworldcorporation.com/images/GlobalPresence.png" alt="Global Reach">
+                                            </div>
+                                            <div class="feature-item-content">
+                                                <h4 style="color: #E31E23; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;" class="h5 xl:h4 mb-2 xl:mb-3">GLOBAL PRESENCE</h4>
+                                                <p style="font-family: aeonik;" class="desc fs-5 xl:fs-4">Kamco Chew Foods exports its confectionery products to multiple countries worldwide.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section end -->
+
+            <!-- Section start -->
+            <div id="roadmap" class="roadmap section panel overflow-hidden">
+                <div style="background: linear-gradient(#FCE8E8, rgb(193, 4, 11, 0.5), rgb(253, 231, 0, 0.5), rgb(0, 167, 1, 0.5), rgb(0, 38, 161, 0.5), #FCE8E8);" class="section-outer panel py-6 sm:py-8 lg:py-9 xl:py-10">
+                    <img class="position-absolute end-0" src="https://html.reactheme.com/muchwow/assets/images/common/cloud-03.svg" alt="victor" style="top: 10%">
+                    <img class="position-absolute start-0 w-300px xl:w-auto" src="https://html.reactheme.com/muchwow/assets/images/common/cloud-04.svg" alt="victor" style="top: 39%">
+                    <img class="position-absolute end-0" src="https://html.reactheme.com/muchwow/assets/images/common/cloud-05.svg" alt="victor" style="bottom: 8%">
+                    <div class="container sm:max-w-lg xl:max-w-xl">
+                        <div class="section-inner panel">
+                            <div id="bilgres-font" class="panel sm:max-w-500px xl:max-w-800px mx-auto mb-4 sm:mb-6 xl:mb-9 text-center" data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; delay: 200;">
+                                <h2 id="bilgres-font" style="padding-left: 150px;" class="uc-accordion-title h4 sm:h3 xl:h2 m-0 rotate-2 text-uppercase ls-0">Our best products</h2>
+                            </div>
+                            <div class="section-content panel">
+                                <img class="position-absolute start-50 top-50 translate-middle d-none lg:d-block" src="https://html.reactheme.com/muchwow/assets/images/common/line.svg" alt="victor" style="height: 90%">
+                                <div class="row child-cols-12 items-center g-4 sm:g-6 lg:gx-10 lg:gy-8 xl:gy-9">
+                                    <div class="sm:col-8 lg:col-6">
+                                        <div class="roadmap-item panel" data-anime="onview: -300; translateY: [48, 0]; opacity: [0, 1]; delay: 200;">
+                                            <div class="px-4 py-6 xl:px-6 xl:py-8 border border-2 border-black contrast-shadow-md text-black bg-secondary-100 rotate-1">
+                                                <img src="/assets/images/products/img13.jpg" alt="Product 3" class="w-full mb-3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sm:col-4 lg:col-6 d-none sm:d-block">
+                                        <div class="panel">
+                                            <h4 class="h5 xl:h4 m-0 text-black -rotate-2">Zombies EyeBall</h4>
+                                            <p class="fs-5 xl:fs-4 mt-2">A chocolate treat that's okay if it stares back at you <br> A sweet and creepy candy that's a favorite of children</p>
+                                            <img class="position-absolute top-0 d-none xl:d-block" src="/assets/images/kamco-logo-version1.svg" width="45" alt="victor" style="left: -15.5%">
+                                            <img class="position-absolute top-0 w-40px d-none lg:d-block xl:d-none" src="/assets/images/kamco-logo-version1.svg" width="45" alt="victor" style="left: -19.5%">
+                                        </div>
+                                    </div>
+                                    <div class="sm:col-4 lg:col-6 d-none sm:d-block">
+                                        <div class="panel" style="display: flex; flex-direction: column; align-items: end;">
+                                            <h4 class="h5 xl:h4 m-0 text-black rotate-2 float-end">Imlee Chatka</h4>
+                                            <p class="fs-5 xl:fs-4 float-end">Kamco makes tamarind flavored sweet candies.<br>Including Brown Extreme Tamarind Flavour Candy. <br>and the Tamarino Power Center Filled Imli Candy. </p>
+                                            <img class="position-absolute top-0 d-none xl:d-block" src="/assets/images/kamco-logo-version1.svg" width="45" alt="victor" style="right: -15.5%">
+                                            <img class="position-absolute top-0 w-40px d-none lg:d-block xl:d-none" src="/assets/images/kamco-logo-version1.svg" width="45" alt="victor" style="right: -19.5%">
+                                        </div>
+                                    </div>
+                                    <div class="sm:col-8 lg:col-6">
+                                        <div class="roadmap-item panel" data-anime="onview: -300; translateY: [48, 0]; opacity: [0, 1]; delay: 200;">
+                                            <div class="px-4 py-6 xl:px-6 xl:py-8 border border-2 border-black contrast-shadow-md text-black bg-secondary-100 rotate-1">
+                                                <img src="/assets/images/products/img10.jpg" alt="Product 3" class="w-full mb-3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sm:col-8 lg:col-6">
+                                        <div class="roadmap-item panel" data-anime="onview: -300; translateY: [48, 0]; opacity: [0, 1]; delay: 200;">
+                                            <div class="px-4 py-6 xl:px-6 xl:py-8 border border-2 border-black contrast-shadow-md text-black bg-secondary-100 rotate-1">
+                                                <img src="/assets/images/products/img9.jpg" alt="Product 3" class="w-full mb-3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sm:col-4 lg:col-6 d-none sm:d-block">
+                                        <div class="panel">
+                                            <h4 class="h5 xl:h4 m-0 text-black -rotate-2">Coolsmint</h4>
+                                            <p class="fs-5 xl:fs-4 mt-2">Bubble Gum- Refresh yourself with cooling</p>
+                                            <img class="position-absolute top-0 d-none xl:d-block" src="/assets/images/kamco-logo-version1.svg" width="45" alt="victor" style="left: -15.5%">
+                                            <img class="position-absolute top-0 w-40px d-none lg:d-block xl:d-none" src="/assets/images/kamco-logo-version1.svg" width="45" alt="victor" style="left: -19.5%">
+                                        </div>
+                                    </div>
+                                    <div class="sm:col-4 lg:col-6 d-none sm:d-block">
+                                        <div class="panel" style="display: flex; flex-direction: column; align-items: end;">
+                                            <h4 class="h5 xl:h4 m-0 text-black rotate-2 float-end">Motu Patlu Egg</h4>
+                                            <p class="fs-5 xl:fs-4 float-end">Motu Patlu jellies are hatching smiles everywhere</p>
+                                            <img class="position-absolute top-0 d-none xl:d-block" src="/assets/images/kamco-logo-version1.svg" width="45" alt="victor" style="right: -15.5%">
+                                            <img class="position-absolute top-0 w-40px d-none lg:d-block xl:d-none" src="/assets/images/kamco-logo-version1.svg" width="45" alt="victor" style="right: -19.5%">
+                                        </div>
+                                    </div>
+                                    <div class="sm:col-8 lg:col-6">
+                                        <div class="roadmap-item panel" data-anime="onview: -300; translateY: [48, 0]; opacity: [0, 1]; delay: 200;">
+                                            <div class="px-4 py-6 xl:px-6 xl:py-8 border border-2 border-black contrast-shadow-md text-black bg-secondary-100 rotate-1">
+                                                <img src="/assets/images/products/img16.jpg" alt="Product 3" class="w-full mb-3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section end -->
+
+            <!-- <div class="d-none xl:d-block">
+                <img class="text-primary" src="https://html.reactheme.com/muchwow/assets/images/common/italic-line-03.svg" alt="victor" data-uc-svg style="margin-top: -5px">
+            </div> -->
+
+            <!-- Section start -->
+            <div id="tokenomics" class="tokenomics section panel overflow-hidden">
+                <div class="section-outer panel py-6 sm:py-8 lg:py-9 xl:py-10">
+                    <div class="container sm:max-w-lg xl:max-w-2xl">
+                        <div class="section-inner panel">
+                            <div class="section-content panel">
+                                <div class="row child-cols-12 justify-center items-center g-5 sm:g-7 lg:g-9" data-anime="onview: -400; targets: >*; translateY: [24, 0]; opacity: [0, 1]; delay: anime.stagger(100, {start: 200});">
+                                    <div class="col-11 sm:col-10 lg:col">
+                                        <div class="tokenomics-image panel p-7 border border-2 border-black contrast-shadow-xl text-black -rotate-2" style="background-color: #FCE8E8">
+                                            <img src="/assets/images/globalPresence.png" alt="Image">
+                                        </div>
+                                    </div>
+                                    <div class="lg:col">
+                                        <div class="global-presence-content vstack items-center gap-4 xl:gap-6 text-center">
+                                            <h2 class="uc-accordion-title h5 sm:h3 xl:h2 mb-0 ls-0 text-uppercase -rotate-1">Our Global Reach 🌍</h2>
+                                            <div class="panel">
+                                                <div class="row child-cols-auto justify-center g-2 sm:g-3 xl:g-4">
+                                                    <div>
+                                                        <div class="p-2 xl:p-3 border border-2 border-black contrast-shadow-sm bg-secondary-100 rotate-2">
+                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">🇳🇬 Nigeria</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="p-2 xl:p-3 border border-2 border-black contrast-shadow-sm text-black -rotate-1" style="background-color: #FCE8E8">
+                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">🇸🇦 Saudi Arabia</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="p-2 xl:p-3 border border-2 border-black contrast-shadow-sm text-black -rotate-1" style="background-color: #FCE8E8">
+                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">🇦🇪 UAE</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="p-2 xl:p-3 border border-2 border-black contrast-shadow-sm text-black bg-secondary-100 rotate-2">
+                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">🇺🇸 USA</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="p-2 xl:p-3 border border-2 border-black contrast-shadow-sm text-black bg-secondary-100 rotate-2">
+                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">🇨🇦 Canada</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="section-footer mt-6 sm:mt-8 lg:mt-9 xl:mt-10 text-center" data-anime="onview: -200; translateY: [24, 0]; opacity: [0, 1]; delay: 200;">
+                                <div class="row child-cols-6 justify-center g-0">
+                                    <div>
+                                        <h2 style="color: #E31E23; font-family: aeonik !important;" class="h2 sm:h1 xl:display-6 mb-1 xl:mb-2">27+</h2>
+                                        <span style="font-family: aeonik;" class="fs-6 sm:fs-5 xl:fs-4 fw-bold">Years of Experience & Presence</span>
+                                    </div>
+                                    <div>
+                                        <h2 style="color: #E31E23; font-family: aeonik !important;" class="h2 sm:h1 xl:display-6 mb-1 xl:mb-2">700+</h2>
+                                        <span style="font-family: aeonik;" class="fs-6 sm:fs-5 xl:fs-4 fw-bold">Happy International Clients</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section end -->
+
+            <!-- Section start -->
+            <div id="subscribe" class="subscribe section panel">
+                <div class="section-outer panel pb-6 sm:pb-8 lg:pb-9 xl:pb-10" data-anime="onview: -400; scale:[0.9, 1]; opacity: [0, 1]; delay: 200;">
+                    <div class="container sm:max-w-lg xl:max-w-2xl">
+                        <div class="section-inner panel p-4 sm:px-8 sm:py-6 lg:p-5 xl:p-7 border border-2 border-black contrast-shadow-lg text-black -rotate-1" style="background-color: #FBE3DF; border-radius: 20px;">
+                            <div class="row child-cols-12 lg:child-cols-6 justify-center items-center g-4 sm:g-6 lg:g-8">
+                                <div class="col-9 sm:col-6">
+                                    <img class="xl:mx-4" src="/assets/images/products/img20.jpg" width="400" alt="Image">
+                                </div>
+                                <div>
+                                    <div class="gap-2 sm:gap-3 text-center">
+                                        <h2 style="font-family: bilgres !important;" class="uc-accordion-title h5 sm:h3 xl:h2 m-0 text-uppercase ls-0">Stay Updated with Kamco Chew Foods! 🍫</h2>
+                                        <p class="fs-5 xl:fs-4 mb-2">Get the latest updates on our delicious chocolates, new product launches, and exclusive offers. 🍬✨</p>
+                                        <form class="row child-cols g-1 sm:w-3/4 xl:w-450px mx-auto">
+                                            <div>
+                                                <div class="form-group inline-block">
+                                                    <input type="email" class="form-control h-48px xl:h-64px fs-6 xl:fs-4 border border-2 border-black contrast-shadow-sm text-black bg-white" placeholder="Enter your email..." required="">
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button style="background-color: #E31E23;" class="btn fs-5 xl:fs-4 w-48px h-48px xl:w-64px xl:h-64px border border-2 border-black contrast-shadow-sm hover:-rotate-2">
+                                                    <i style="color: white;" class="icon-2 xl:icon-3 unicon-send-alt"></i>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+
+            <!-- Section end -->
+
+            <!-- <div class="d-none xl:d-block">
+                <img class="text-secondary-100" src="https://html.reactheme.com/muchwow/assets/images/common/italic-line-01.svg" alt="victor" data-uc-svg style="margin-bottom: -1px">
+            </div> -->
+
+            <!-- Section start -->
+            <div id="faq" class="faq section panel overflow-hidden">
+                <div style="background-color: #FBE3DF;" class="section-outer panel py-6 sm:py-8 lg:py-9 xl:py-10">
+                    <div class="container sm:max-w-md xl:max-w-lg">
+                        <div class="section-inner panel" data-anime="onview: -300; targets: >*; translateY: [24, 0]; opacity: [0, 1]; delay: anime.stagger(100, {start: 200});">
+                            <div class="section-header panel sm:max-w-500px xl:max-w-800px mx-auto mb-4 sm:mb-6 xl:mb-9 text-center">
+                                <h2 class="uc-accordion-title h4 sm:h3 xl:h2 m-0 rotate-2 text-uppercase ls-0">Frequently Asked Questions?</h2>
+                            </div>
+                            <div class="section-content panel">
+                                <ul class="gap-3 sm:gap-4" data-uc-accordion="targets: > li; multiple: true">
+                                    <li class="panel p-3 sm:p-4 xl:p-6 border border-2 border-black contrast-shadow-sm text-black bg-white rotate-1 uc-open">
+                                        <p style="color: #E31E23; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important; font-weight: bold;" class="uc-accordion-title h5 xl:h4 m-0" href="#">What products does Kamco Chew Foods offer? 🍭</a>
+                                        <div class="uc-accordion-content">
+                                            <p style="font-family: aeonik !important;" class="fs-5 xl:fs-4">Kamco Chew Foods specializes in a wide range of confectionery products, including bubble gum, chewing gum, center-filled gums, chocolate gems, biscuits, toffees, cakes, wafers, lollipops, hard candy, and much more!</p>
+                                        </div>
+                                    </li>
+                                    <li class="panel p-3 sm:p-4 xl:p-6 border border-2 border-black contrast-shadow-sm text-black bg-white -rotate-1">
+                                        <p style="color: #E31E23; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important; font-weight: bold;" class="uc-accordion-title h5 xl:h4 m-0" href="#">Where can I buy Kamco products? 🛒</a>
+                                        <div class="uc-accordion-content">
+                                            <p style="font-family: aeonik !important;" class="fs-5 xl:fs-4">Kamco Chew Foods' products are available through various distributors, retailers, and online marketplaces. For bulk orders or distributor inquiries, please contact us directly.</p>
+                                        </div>
+                                    </li>
+                                    <li class="panel p-3 sm:p-4 xl:p-6 border border-2 border-black contrast-shadow-sm text-black bg-white rotate-1">
+                                        <p style="color: #E31E23; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important; font-weight: bold;" class="uc-accordion-title h5 xl:h4 m-0" href="#">Does Kamco offer customized or private-label products? 🏷️</a>
+                                        <div class="uc-accordion-content">
+                                            <p style="font-family: aeonik !important;" class="fs-5 xl:fs-4">Yes! We offer private labeling and custom manufacturing options to meet specific client needs. Reach out to us to discuss your requirements.</p>
+                                        </div>
+                                    </li>
+                                    <li class="panel p-3 sm:p-4 xl:p-6 border border-2 border-black contrast-shadow-sm text-black bg-white -rotate-1">
+                                        <p style="color: #E31E23; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important; font-weight: bold;" class="uc-accordion-title h5 xl:h4 m-0" href="#">Does Kamco export products internationally? 🌍</a>
+                                        <div class="uc-accordion-content">
+                                            <p style="font-family: aeonik !important;" class="fs-5 xl:fs-4">Absolutely! Kamco Chew Foods exports confectionery products worldwide. For international business inquiries, please contact our export team.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section end -->
+
+            <!-- Text Marquee Start -->
+            <div class="panel z-99">
+                <div class="position-absolute top-0 start-0 w-100 h-1/2"></div>
+                <div class="position-absolute bottom-0 start-0 w-100 h-1/2" style="background-color: #dbf2ff"></div>
+                <div class="py-1 rotate-1 bg-white">
+                    <div class="h3 xl:h2 fw-medium py-4 xl:py-6 reverse text-white text-uppercase ls-0" data-uc-marquee="clone: 3; gap: 64; reverse: true;" style="--gap: 32px; background-color: #E31E23;">
+                        <div>
+                            <div class="hstack gap-8">
+                                <div>🍫</div>
+                                <span class="hero-band-text">Kamco</span>
+                                <div>🍫</div>
+                                <span class="hero-band-text">Chew</span>
+                                <div>🍫</div>
+                                <span class="hero-band-text">Foods</span>
+                            </div>
+                            <div class="hstack gap-8">
+                                <div>🍫</div>
+                                <span class="hero-band-text">Kamco</span>
+                                <div>🍫</div>
+                                <span class="hero-band-text">Chew</span>
+                                <div>🍫</div>
+                                <span class="hero-band-text">Foods</span>
+                            </div>
+                            <div class="hstack gap-8">
+                                <div>🍫</div>
+                                <span class="hero-band-text">Kamco</span>
+                                <div>🍫</div>
+                                <span class="hero-band-text">Chew</span>
+                                <div>🍫</div>
+                                <span class="hero-band-text">Foods</span>
+                            </div>
+                            <div class="hstack gap-8">
+                                <div>🍫</div>
+                                <span class="hero-band-text">Kamco</span>
+                                <div>🍫</div>
+                                <span class="hero-band-text">Chew</span>
+                                <div>🍫</div>
+                                <span class="hero-band-text">Foods</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text Marquee end -->
+        </div>
+
+        <!-- Wrapper end -->
+
+        <!-- Footer start -->
+        <footer id="uc-footer" class="uc-footer panel overflow-hidden">
+            <div class="footer-outer">
+                <div class="footer-cta panel py-6 sm:py-8 lg:py-9 xl:py-10 min-h-550px sm:min-h-950px lg:min-h-1000px xl:min-h-1320px">
+                    <img class="position-absolute start-0 bottom-0 w-100" src="https://image.similarpng.com/file/similarpng/original-picture/2020/05/A-splash-of-chocolate-PNG.png" alt="Image">
+                    <div class="container sm:max-w-md">
+                        <div class="footer-inner panel vstack gap-4 sm:gap-6 xl:gap-9" data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; delay: 200;">
+                            <div class="panel text-center">
+                                <h2 class="uc-accordion-title h4 sm:h3 xl:h2 m-0 -rotate-1 text-uppercase ls-0" style="padding-left: 160px;">
+                                    Get in touch <br class="d-none sm:d-block">
+                                    with us 📢
+                                </h2>
+                            </div>
+                            <form class="vstack items-center gap-2 sm:gap-3">
+                                <div class="w-full">
+                                    <div class="row child-cols-12 sm:child-cols-6 g-3">
+                                        <div>
+                                            <input class="form-control h-56px xl:h-64px fs-6 xl:fs-4 w-full border border-3 border-black contrast-shadow-sm text-black bg-white" type="text" placeholder="Your name" required>
+                                        </div>
+                                        <div>
+                                            <input class="form-control h-56px xl:h-64px fs-6 xl:fs-4 w-full border border-3 border-black contrast-shadow-sm text-black bg-white" type="email" placeholder="Email Address" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input class="form-control h-56px xl:h-64px fs-6 xl:fs-4 w-full border border-3 border-black contrast-shadow-sm text-black bg-white" type="text" placeholder="Subject">
+                                <textarea class="form-control min-h-150px fs-6 xl:fs-4 w-full border border-3 border-black contrast-shadow-sm text-black bg-white" placeholder="Your message.." required></textarea>
+                                <button style="background-color: #E31E23; color: white;" class="btn btn-md sm:btn-xl xl:btn-2xl px-3 mt-3 sm:mt-5 xl:mt-8 border border-3 border-black contrast-shadow-sm -rotate-2 hover:rotate-0" type="submit">
+                                    <span>Send Message</span>
+                                    <span class="fs-4 mb-narrow">📢</span>
+                                </button>
+                            </form>
+                            <div class="social-media panel">
+                                <ul class="nav-x justify-center gap-4 xl:gap-6">
+                                    <li>
+                                        <a class="hover:-rotate-3" href="https://www.instagram.com/kamcochewfoods/?hl=en"><img style="height: 42px;" src="https://cdn-icons-png.flaticon.com/512/2111/2111421.png" alt="instagram"></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-48px lg:w-56px xl:w-64px hover:-rotate-3" href="https://www.facebook.com/p/Kamco-Chew-Foods-100063781970067"><img src="https://html.reactheme.com/muchwow/assets/images/common/facebook.svg" alt="facebook"></a>
+                                    </li>
+                                    <li>
+                                        <a class="w-48px lg:w-56px xl:w-64px hover:-rotate-3" href="https://www.youtube.com/@kamcochewfoods2106"><img src="https://html.reactheme.com/muchwow/assets/images/common/youtube.svg" alt="youtube"></a>
+                                    </li>
+                                    <li>
+                                        <a class="hover:-rotate-3" href="https://www.linkedin.com/kamco-chew-food-private-limited?_l=en_US"><img style="height: 42px;" src="https://live.staticflickr.com/8296/7749079740_113c14cc98_w.jpg" alt="twitter"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content panel text-white" style="margin-top: -1px; position: absolute; bottom: 0px;">
+                    <div style="padding: 20px;" class="container">
+                        <div class="footer-inner panel vstack lg:hstack gap-4 justify-between fs-5 xl:fs-4 text-center py-2 lg:py-4">
+                            <p style="font-family: aeonik !important;">Kamco Chew Foods © 2025, All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer end -->
+
+        <!-- include jquery & bootstrap js -->
+        <script defer src="../assets/js/libs/jquery.min.js"></script>
+        <script defer src="../assets/js/libs/bootstrap.min.js"></script>
+
+        <!-- include scripts -->
+        <script defer src="../assets/js/libs/anime.min.js"></script>
+        <script defer src="../assets/js/libs/swiper-bundle.min.js"></script>
+        <script defer src="../assets/js/libs/scrollmagic.min.js"></script>
+        <script defer src="../assets/js/libs/typed.min.js"></script>
+        <script defer src="../assets/js/libs/tilt.min.js"></script>
+        <script defer src="../assets/js/libs/split-type.min.js"></script>
+        <script defer src="../assets/js/libs/prettify.min.js"></script>
+        <script defer src="../assets/js/libs/gsap.min.js"></script>
+        <script defer src="../assets/js/core/magic-cursor.js"></script>
+        <script defer src="../assets/js/helpers/data-attr-helper.js"></script>
+        <script defer src="../assets/js/helpers/swiper-helper.js"></script>
+        <script defer src="../assets/js/helpers/splitype-helper.js"></script>
+        <script defer src="../assets/js/helpers/anime-helper.js"></script>
+        <script defer src="../assets/js/helpers/typed-helper.js"></script>
+        <script defer src="../assets/js/helpers/tilt-helper.js"></script>
+        <script defer src="../assets/js/core/marquee.js"></script>
+        <script defer src="../assets/js/uikit-components-bs.js"></script>
+
+        <!-- include app script -->
+        <script defer src="../assets/js/app.js"></script>
+
+        <script>
+            // Schema toggle via URL
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const getSchema = urlParams.get("schema");
+            if (getSchema === "dark") {
+                setDarkMode(1);
+            } else if (getSchema === "light") {
+                setDarkMode(0);
+            }
+        </script>
+    </body>
+
+<!-- Mirrored from html.reactheme.com/muchwow/main/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Feb 2025 10:46:46 GMT -->
 </html>
