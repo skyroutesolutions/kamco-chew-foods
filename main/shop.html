@@ -73,7 +73,7 @@
         <!-- include main style -->
         <link rel="stylesheet" href="../assets/css/theme/theme-two.min.purge.css">
 
-        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
 
         <!-- include scripts -->
         <script src="../assets/js/uni-core/js/uni-core-bundle.min.js"></script>
@@ -86,7 +86,7 @@
                 <header class="uc-offcanvas-header hstack justify-between items-center pb-2">
                     <div class="uc-logo">
                         <a href="index.html" class="h5 text-none text-gray-900 dark:text-white">
-                            <img class="w-50px" src="/assets/images/kamco-logo-version1.svg" alt="MuchWOW">
+                            <img class="w-50px" src="../assets/images/kamco-logo-version1.svg" alt="MuchWOW">
                         </a>
                     </div>
                     <button class="uc-offcanvas-close rtl:end-auto rtl:start-0 m-1 mt-2 p-0 btn border-0 dark:text-white dark:text-opacity-50 hover:text-primary hover:rotate-90 duration-150 transition-all" type="button">
@@ -129,7 +129,7 @@
         </div>
 
         <!-- Header start -->
-        <header class="uc-header header-two uc-navbar-sticky-wrap z-999 uc-dark" data-uc-sticky="start: 100vh; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;">
+        <header id="header-container" class="uc-header header-two uc-navbar-sticky-wrap z-999 uc-dark" data-uc-sticky="start: 100vh; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;">
             <nav class="uc-navbar-container bg-transparent mt-3 xl:mt-4 uc-navbar-float ft-tertiary z-1" data-anime="translateY: [-40, 0]; opacity: [0, 1]; duration: 750; delay: 0;">
                 <div class="uc-navbar-main" style="--uc-nav-height: 100px">
                     <div class="container">
@@ -137,7 +137,7 @@
                             <div class="uc-navbar-left">
                                 <div class="uc-logo">
                                     <a class="panel text-none w-150px xl:w-auto" href="index.html">
-                                        <img src="/assets/images/kamco-logo-version2.svg" style="height: 80px; filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.492));" alt="MuchWOW">
+                                        <img src="../assets/images/kamco-logo-version2.svg" style="height: 80px; filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.492));" alt="MuchWOW">
                                     </a>
                                 </div>
                             </div>
@@ -168,7 +168,7 @@
         <!-- Section start -->
         <div id="features" class="features section panel">
             <div class="section-outer panel py-6 sm:py-8 lg:py-9 xl:py-10" style="background-color: rgb(255, 218, 127, 0.6) ; border: 4px solid black; border-radius: 20px; margin: 160px 20px 20px 20px; position: relative; overflow: hidden;">
-                <img id="cremefills-candy" src="/assets/images/elements/candy.png" alt="victor">
+                <img id="cremefills-candy" src="../assets/images/elements/candy.png" alt="victor">
                 <img id="float-horizontal" class="feature-el1 w-250px xl:w-auto" src="https://html.reactheme.com/muchwow/assets/images/common/cloud-01.svg" alt="victor">
                 <img id="float-horizontal" class="feature-el2 w-200px xl:w-auto" src="https://html.reactheme.com/muchwow/assets/images/common/cloud-02.svg" alt="victor" >
                 <div class="container sm:max-w-lg xl:max-w-xl">
@@ -198,14 +198,14 @@
                                 <div class="row child-cols-12 justify-center items-center g-5 sm:g-7 lg:g-9" data-anime="onview: -400; targets: >*; translateY: [24, 0]; opacity: [0, 1]; delay: anime.stagger(100, {start: 200});">
                                     <div class="col-11 sm:col-10 lg:col">
                                         <div class="about-image panel p-7 border border-2 border-black contrast-shadow-xl text-black -rotate-2">
-                                            <img src="/assets/images/products/img19.jpg" alt="Image">
+                                            <img src="../assets/images/products/img19.jpg" alt="Image">
                                         </div>
                                     </div>
                                     <div class="lg:col">
                                         <div class="about-content vstack items-center gap-3 sm:gap-4 text-center">
                                             <p style="font-family: bilgres !important;" class="uc-accordion-title h5 sm:h3 xl:h2 mb-0 ls-0 text-uppercase -rotate-1">
                                                 <span style="z-index: 99;">Crafted for Perfection</span>
-                                                <img id="quality-matters-el1" style="right: 20px;" src="/assets/images/elements/chocostick.png" alt="">
+                                                <img id="quality-matters-el1" style="right: 20px;" src="../assets/images/elements/chocostick.png" alt="">
                                             </p>
                                             <div class="desc">
                                                 <p class="fs-6 sm:fs-5 xl:fs-4 mb-2">
@@ -245,7 +245,7 @@
         <footer>
             <div>
                 <div class="footer-cta panel">
-                    <img class="w-100" src="/assets/images/bg/img1.png" alt="Image">
+                    <img class="w-100" src="../assets/images/bg/img1.png" alt="Image">
                 </div>
                 <div class="footer-content panel text-white" style="margin-top: -1px; position: absolute; bottom: 0px;">
                     <div style="padding: 20px;" class="container">
@@ -299,55 +299,55 @@
             const products = [
                 {
                     id: 1,
-                    image: "/assets/images/products/img1.jpeg",
+                    image: "../assets/images/products/img1.jpeg",
                     title: "Twistix",
                     price: "₹10",
                 },
                 {
                     id: 2,
-                    image: "/assets/images/products/img2.jpeg",
+                    image: "../assets/images/products/img2.jpeg",
                     title: "Strawberry Cremefills",
                     price: "₹10",
                 },
                 {
                     id: 3,
-                    image: "/assets/images/products/img3.jpeg",
+                    image: "../assets/images/products/img3.jpeg",
                     title: "Chocolate Cremefills",
                     price: "₹10",
                 },
                 {
                     id: 4,
-                    image: "/assets/images/products/img4.jpeg",
+                    image: "../assets/images/products/img4.jpeg",
                     title: "Penaut Cremefills",
                     price: "₹10",
                 },
                 {
                     id: 5,
-                    image: "/assets/images/products/img5.jpeg",
+                    image: "../assets/images/products/img5.jpeg",
                     title: "Milk Cremefills",
                     price: "₹10",
                 },
                 {
                     id: 6,
-                    image: "/assets/images/products/img6.jpeg",
+                    image: "../assets/images/products/img6.jpeg",
                     title: "Cookies n Creame",
                     price: "₹10",
                 },
                 {
                     id: 7,
-                    image: "/assets/images/products/img7.jpg",
+                    image: "../assets/images/products/img7.jpg",
                     title: "Choconut",
                     price: "₹10",
                 },
                 {
                     id: 8,
-                    image: "/assets/images/products/img8.jpg",
+                    image: "../assets/images/products/img8.jpg",
                     title: "Candies",
                     price: "₹10",
                 },
                 {
                     id: 9,
-                    image: "/assets/images/products/img9.jpg",
+                    image: "../assets/images/products/img9.jpg",
                     title: "Coolsmint",
                     price: "₹10",
                 },
