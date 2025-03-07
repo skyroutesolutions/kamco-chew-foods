@@ -74,6 +74,12 @@
         <link rel="stylesheet" href="../assets/css/theme/theme-two.min.purge.css">
         <link rel="stylesheet" href="../assets/css/style.css">
 
+        <!-- SweetAlert2 CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
         <!-- include scripts -->
         <script src="../assets/js/uni-core/js/uni-core-bundle.min.js"></script>
     </head>
@@ -193,19 +199,24 @@
                             </div>
                         </header>
                         <div class="page-content panel fs-6 md:fs-5">
-                            <form class="vstack items-center gap-2 sm:gap-3 max-w-md mx-auto">
+                            <form id="contact-form" class="vstack items-center gap-2 sm:gap-3 max-w-md mx-auto contact-form">
+
                                 <div class="w-full">
                                     <div class="row child-cols-12 sm:child-cols-6 g-3">
                                         <div>
-                                            <input class="form-control h-48px xl:h-56px fs-6 xl:fs-5 w-full border border-3 border-black contrast-shadow-sm text-black bg-white" type="text" placeholder="Your name" required>
+                                            <input id="name" class="form-control h-48px xl:h-56px fs-6 xl:fs-5 w-full border border-3 border-black contrast-shadow-sm text-black bg-white" type="text" placeholder="Your name" required>
+
                                         </div>
                                         <div>
-                                            <input class="form-control h-48px xl:h-56px fs-6 xl:fs-5 w-full border border-3 border-black contrast-shadow-sm text-black bg-white" type="email" placeholder="Email Address" required>
+                                            <input id="email" class="form-control h-48px xl:h-56px fs-6 xl:fs-5 w-full border border-3 border-black contrast-shadow-sm text-black bg-white" type="email" placeholder="Email Address" required>
+
                                         </div>
                                     </div>
                                 </div>
-                                <input class="form-control h-48px xl:h-56px fs-6 xl:fs-5 w-full border border-3 border-black contrast-shadow-sm text-black bg-white" type="text" placeholder="Subject">
-                                <textarea class="form-control min-h-150px fs-6 xl:fs-5 w-full border border-3 border-black contrast-shadow-sm text-black bg-white" placeholder="Your message.." required></textarea>
+                                <input id="subject" class="form-control h-48px xl:h-56px fs-6 xl:fs-5 w-full border border-3 border-black contrast-shadow-sm text-black bg-white" type="text" placeholder="Subject">
+
+                                <textarea id="message" class="form-control min-h-150px fs-6 xl:fs-5 w-full border border-3 border-black contrast-shadow-sm text-black bg-white" placeholder="Your message.." required></textarea>
+
                                 <button style="background-color: #E31E23; font-family: aeonik;" class="btn btn-md xl:btn-xl border border-2 border-black contrast-shadow-sm d-none lg:d-inline-flex mt-2" type="submit">
                                     <span class="text-white">Send Message</span>
                                     <span class="fs-4 mb-narrow">📢</span>
@@ -337,6 +348,43 @@
                 setDarkMode(0);
             }
         </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $('#contact-form').submit(function(e) {
+                e.preventDefault();
+                var contactId = $('#contact-id').val();
+                var formData = {
+                    id: contactId,
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    subject: $('#subject').val(),
+                    message: $('#message').val()
+                };
+
+                var url =  '../Dark/backend/add_contact.php';
+
+                $.post(url, formData, function(response) { 
+    Swal.fire({
+        title: 'Success!',
+        text: response,
+        icon: 'success',
+        confirmButtonText: 'OK'
+    }).then(() => {
+        $('#contactModal').modal('hide');
+        loadContacts();
+    });
+}).fail(function(jqXHR, textStatus, errorThrown) {
+    Swal.fire({
+        title: 'Error!',
+        text: 'An error occurred: ' + errorThrown,
+        icon: 'error',
+        confirmButtonText: 'OK'
+    });
+});
+
+            });  </script>
+    
     </body>
 
 <!-- Mirrored from html.reactheme.com/muchwow/main/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Feb 2025 10:46:48 GMT -->
