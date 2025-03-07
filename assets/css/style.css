@@ -42,6 +42,7 @@
   left: 18%;
   top: 32%;
   transform: rotate(-12deg);
+  /* animation: float 3s ease-in-out infinite; */
 }
 
 #hero-product2 {
@@ -147,7 +148,7 @@
   border-radius: 20px;
   margin: 40px;
   position: relative;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 #tokenomics{
@@ -216,13 +217,13 @@
 
 @keyframes lefttoright {
   0% {
-    transform: translateX(0px);
+    transform: translateX(-100px);
   }
   50% {
-    transform: translateX(30px);
+    transform: translateX(200px);
   }
   100% {
-    transform: translateX(0px);
+    transform: translateX(-100px);
   }
   
 }
