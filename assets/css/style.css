@@ -8,6 +8,11 @@
   src: url(../fonts/AeonikFono-Regular.otf);
 }
 
+@font-face {
+  font-family: "sergio";
+  src: url(../fonts/SergioTrendy.ttf);
+}
+
 #header-container {
   position: fixed;
   top: 0;
@@ -17,20 +22,98 @@
   z-index: 999;
 }
 
-#bilgres-font{
-  font-family: "bilgres !important";
+#wrapper{
+  background-color: #FBE3DF;
 }
 
-#getInTouch :hover{
-  border: 10px solid green;
+#hero-container{
+  background-image: url(../images/bg/hero.png);
+  background-size: cover;
+  height: 130vh;
 }
 
-.hero-band-text{
-  -webkit-text-stroke: 2.5px black;
+.hero-products{
+  position: absolute;
+  object-fit: cover;
 }
 
-#landing-page-chocostick {
-  animation: float 3s ease-in-out infinite;
+#hero-product1 {
+  height: 55%;
+  left: 18%;
+  top: 32%;
+  transform: rotate(-12deg);
+}
+
+#hero-product2 {
+  height: 55%;
+  right: 17%;
+  top: 32%;
+  transform: rotate(8deg);
+}
+
+#hero-product3 {
+  height: 75%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 55%;
+}
+
+#hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+}
+
+#about{
+  margin: 20px 40px 0px 40px;
+  border: 4px solid black;
+  border-radius: 30px;
+  background-image: url(../images/bg/about.jpg);
+  background-color: transparent;
+  background-size: cover;
+}
+
+.rollis{
+  position: absolute;
+  width: 25%;
+  transform: rotate(-50deg);
+  
+}
+
+#rollis1 {
+  top: 50px;
+  right: -160px;
+}
+
+#rollis2 {
+  bottom: -20px;
+  left: -160px;
+}
+
+#quality-matters-el1{
+  filter: drop-shadow(0px 0px 5px black);
+  width: 10%;
+  position: absolute;
+  top: 85px;
+  left: 25px;
+  margin-top: 6%;
+  margin-left: 20px;
+  z-index: 99;
+  animation: rotate 3s ease-in-out infinite;
+}
+
+#worldWideDomination-container{
+  position: relative;
+  background-color: burlywood;
+}
+
+#videoOverlay{
+  display: flex;
+}
+#videoOverlay div{
+  flex: 1;
+  background-color: #062e46;
 }
 
 #landing-page-teddy{
@@ -38,13 +121,53 @@
   animation-delay: 0.5s;
 }
 
-#quality-matters-el1{
-  height: 100px;
-  position: absolute;
-  bottom: -33px;
-  right: -85px;
-  animation: rotate 3s ease-in-out infinite;
+#text-bg-section{
+  width: 100%;
+  background-color: #0054A4;
+  position: relative;
+  overflow: hidden;
 }
+
+#text-bg-section #container{
+  display: flex;
+  padding: 30px;
+  gap: 80px;
+  align-items: center;
+}
+
+#text-bg-section #container img{
+  height: 500px;
+  object-fit: cover;
+  filter: drop-shadow(0px 0px 10px black);
+}
+
+#features #features-container {
+  background-color: #F8B852;
+  border: 4px solid black;
+  border-radius: 20px;
+  margin: 40px;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+#tokenomics{
+  margin: 40px;
+  border: 4px solid black;
+  border-radius: 30px;
+  background-image: url(../images/bg/about.jpg);
+  background-color: transparent;
+  background-size: cover;
+}
+
+#bilgres-font{
+  font-family: "bilgres !important";
+}
+
+.hero-band-text{
+  -webkit-text-stroke: 2.5px black;
+}
+
+
 
 #yellow-packet{
   position: absolute;
@@ -79,6 +202,16 @@
 .feature-el2{
   bottom: 6%;
   right: 0px;
+}
+
+#contact{
+  margin: 0px 40px 0px 40px;
+  border: 4px solid black;
+  border-radius: 30px;
+  background-image: url(../images/bg/about.jpg);
+  background-color: transparent;
+  background-size: cover;
+  margin-bottom: 50px;
 }
 
 @keyframes lefttoright {
@@ -145,4 +278,33 @@
   .section-inner{
     padding-top: 30px;
   }
+}
+
+@media screen and (max-width: 576px){
+  #hero-product1 {
+    height: 25%;
+    left: 0%;
+    top: 30%;
+    transform: rotate(-12deg);
+  }
+  
+  #hero-product2 {
+    height: 25%;
+    right: 0%;
+    top: 30%;
+    transform: rotate(8deg);
+  }
+  
+  #hero-product3 {
+    height: 35%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 45%;
+  }
+
+  #hero-content {
+    position: absolute;
+    bottom: 25%;
+  }
+
 }

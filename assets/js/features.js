@@ -16,3 +16,24 @@ window.addEventListener("scroll", function () {
 
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.querySelectorAll('.counter-container span').forEach(counter => {
+    let target = counter.getAttribute('data-count');
+
+    gsap.fromTo(counter, 
+        { innerHTML: 0 }, 
+        { 
+            innerHTML: target, 
+            duration: 4, 
+            ease: "power1.out",
+            snap: { innerHTML: 1 }, 
+            scrollTrigger: {
+                trigger: counter,
+                start: "top 80%",
+                once: true
+            }
+        }
+    );
+});
