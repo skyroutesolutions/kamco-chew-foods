@@ -13,6 +13,18 @@
   src: url(../fonts/SergioTrendy.ttf);
 }
 
+.animated-element {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  transform: rotate(-360deg);
+  z-index: 9999;
+}
+
 #header-container {
   position: fixed;
   top: 0;
@@ -74,6 +86,11 @@
   background-size: cover;
 }
 
+.counter-container {
+  color: #E31E23;
+  font-family: aeonik !important;
+}
+
 .rollis{
   position: absolute;
   width: 25%;
@@ -122,6 +139,7 @@
 }
 
 #text-bg-section{
+  margin-top: 30px;
   width: 100%;
   background-color: #0054A4;
   position: relative;
@@ -147,7 +165,7 @@
   border-radius: 20px;
   margin: 40px;
   position: relative;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 #tokenomics{
@@ -214,6 +232,18 @@
   margin-bottom: 50px;
 }
 
+#contact #inputFields{
+  padding-right: 20px;
+}
+
+#contact .focus-icon {
+  height: 90%;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 @keyframes lefttoright {
   0% {
     transform: translateX(0px);
@@ -260,7 +290,6 @@
   }
 }
 
-
 @keyframes bounceTeddy {
   0%, 50%, 100% {
     transform: translateY(0) ;
@@ -275,23 +304,28 @@
 }
 
 @media screen and (max-width: 768px){
+  #hero-container{
+    background-image: url(../images/bg/hero-mobile.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
   .section-inner{
     padding-top: 30px;
   }
-}
 
-@media screen and (max-width: 576px){
   #hero-product1 {
     height: 25%;
-    left: 0%;
-    top: 30%;
+    left: 4%;
+    top: 35%;
     transform: rotate(-12deg);
   }
   
   #hero-product2 {
     height: 25%;
-    right: 0%;
-    top: 30%;
+    right: 4%;
+    top: 35%;
     transform: rotate(8deg);
   }
   
@@ -299,12 +333,20 @@
     height: 35%;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 45%;
+    top: 43%;
   }
 
   #hero-content {
     position: absolute;
-    bottom: 25%;
+    bottom: 10%;
   }
 
+  #about{
+    margin: 15px 5px;
+    border-radius: 20px;
+  }
+
+  .counter-container {
+    font-size: 32px !important;
+  }
 }

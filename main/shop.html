@@ -74,6 +74,7 @@
         <link rel="stylesheet" href="../assets/css/theme/theme-two.min.purge.css">
 
         <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/shop.css">
 
         <!-- include scripts -->
         <script src="../assets/js/uni-core/js/uni-core-bundle.min.js"></script>
@@ -99,7 +100,7 @@
                         <li><a href="/kamco-chew-foods/index.html">Home</a></li>
                         <li><a href="/kamco-chew-foods/main/about.html">About</a></li>
                         <li><a href="/kamco-chew-foods/main/shop.html">Shop</a></li>
-                        <li><a href="/kamco-chew-foods/main/contact.html">Contact</a></li>
+                        <li><a href="/kamco-chew-foods/main/blogs.html">Blogs</a></li>
                         <li><a href="/kamco-chew-foods/index.html#faq">FAQ</a></li>
                         <li class="hr opacity-10 my-1"></li>
                     </ul>
@@ -123,7 +124,7 @@
 
         <!--  Bottom Actions Sticky -->
         <div class="backtotop-wrap position-fixed bottom-0 end-0 z-99 m-2 vstack">
-            <a class="btn btn-sm p-0 bg-yellow text-black border border-2 border-black contrast-shadow-sm w-48px h-48px rounded-circle" href="to_top.html" data-uc-backtotop>
+            <a style="background-color: #E31E23;" class="btn btn-sm p-0 text-black border border-2 border-black contrast-shadow-sm w-48px h-48px rounded-circle" href="to_top.html" data-uc-backtotop>
                 <img class="icon icon-3" src="https://html.reactheme.com/muchwow/assets/images/icons/chevron-up.svg" alt="to-top" data-uc-svg>
             </a>
         </div>
@@ -136,21 +137,22 @@
                         <div style="background-color: #E31E23; backdrop-filter: blur(5px); padding: 10px;" class="uc-navbar min-h-64px lg:min-h-80px xl:min-h-100px ps-2 pe-1 lg:px-4 border border-2 border-black contrast-shadow-md rounded-2 lg:rounded-3" data-uc-navbar=" animation: uc-animation-slide-top-small; duration: 150;" >
                             <div class="uc-navbar-left">
                                 <div class="uc-logo">
-                                    <a class="panel text-none w-150px xl:w-auto" href="/index.html">
+                                    <a class="panel text-none w-150px xl:w-auto" href="/kamco-chew-foods/index.html">
                                         <img loading="lazy" src="../assets/images/kamco-logo-version2.svg" style="height: 80px; filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.492));" alt="Kamco Chew Foods">
                                     </a>
                                 </div>
                             </div>
                             <div class="uc-navbar-center">
                                 <ul style="color: white; font-family: aeonik;" class="uc-navbar-nav fs-5 xl:fs-4 gap-3 lg:gap-4 d-none lg:d-flex fw-semibold" data-uc-scrollspy-nav="closet: > *; offset: 48; scroll: true;">
+                                    <li><a href="/kamco-chew-foods/index.html">Home</a></li>
                                     <li><a href="/kamco-chew-foods/main/about.html">About</a></li>
                                     <li><a href="/kamco-chew-foods/main/shop.html">Shop</a></li>
-                                    <li><a href="/kamco-chew-foods/main/contact.html">Contact</a></li>
+                                    <li><a href="/kamco-chew-foods/main/blogs.html">Blogs</a></li>
                                     <li><a href="/kamco-chew-foods/index.html#faq">FAQ</a></li>
                                 </ul>
                             </div>
                             <div class="uc-navbar-right">
-                                <a style="background-color: white; color: #E31E23; font-family: aeonik;" class="btn btn-sm xl:btn-md btn-secondary border border-2 border-black contrast-shadow-sm -rotate-2 hover:rotate-0 d-none lg:d-inline-flex" href="contact.html">
+                                <a style="background-color: white; color: #E31E23; font-family: aeonik;" class="btn btn-sm xl:btn-md btn-secondary border border-2 border-black contrast-shadow-sm -rotate-2 hover:rotate-0 d-none lg:d-inline-flex" href="/kamco-chew-foods/main/contact.html">
                                     <span>Get in touch</span>
                                 </a>
                                 <a style="background-color: #F6B149;" class="btn btn-md btn-secondary w-48px h-48px p-0 border border-2 border-black contrast-shadow-sm d-inline-flex lg:d-none" href="#uc-menu-panel" data-uc-toggle>
@@ -171,8 +173,7 @@
 
             <!-- Section start -->
             <div id="features" class="features section panel">
-                <div class="section-outer panel py-6 sm:py-8 lg:py-9 xl:py-10" style="background-color: rgb(255, 218, 127, 0.6) ; border: 4px solid black; border-radius: 20px; margin: 160px 40px 40px 40px; position: relative; overflow: hidden;">
-                    <img id="cremefills-candy" src="../assets/images/elements/candy.png" alt="victor">
+                <div id="shop-container" class="section-outer panel py-6 sm:py-8 lg:py-9 xl:py-10">
                     <img id="float-horizontal" class="feature-el1 w-250px xl:w-auto" src="https://html.reactheme.com/muchwow/assets/images/common/cloud-01.svg" alt="victor">
                     <img id="float-horizontal" class="feature-el2 w-200px xl:w-auto" src="https://html.reactheme.com/muchwow/assets/images/common/cloud-02.svg" alt="victor" >
                     <div class="container sm:max-w-lg xl:max-w-xl">
@@ -180,9 +181,28 @@
                             <div>
                                 <h2 style="display: flex; justify-content: center;" class="uc-accordion-title h4 sm:h3 xl:h2 m-0 rotate-2 text-uppercase ls-0">Shop</h2><br>
                             </div>
+
+                            <div id="shop-header-container">
+                                <h2 id="0">
+                                    Shop All
+                                    <span></span>
+                                </h2>
+                                <h2 id="1">
+                                    Chocolate
+                                    <span></span>
+                                </h2>
+                                <h2 id="2">
+                                    Bundles
+                                    <span></span>
+                                </h2>
+                                <h2 id="3">
+                                    Offers
+                                    <span></span>
+                                </h2>
+                            </div>
+
                             <div class="section-content panel text-center">
                                 <div id="products-grid" class="row child-cols-12 sm:child-cols-6 lg:child-cols-4 justify-center g-3 lg:g-4 xl:g-4 col-match" data-anime="onview: -400; targets: >*; translateY: [24, 0]; opacity: [0, 1]; delay: anime.stagger(100, {start: 200});">
-                                    
                                 </div>
                             </div>
                         </div>                        
@@ -190,60 +210,12 @@
                 </div>
             </div>
             <!-- Section end -->
-
-            <!-- Section start -->
-            <div id="about" class="about section panel overflow-hidden">
-                <div class="section-outer panel py-6 sm:py-8 lg:py-9 xl:py-10">
-                    <div class="container sm:max-w-lg xl:max-w-2xl">
-                        <div class="section-inner panel">
-                            <div class="section-content panel">
-                                <div class="row child-cols-12 justify-center items-center g-5 sm:g-7 lg:g-9" data-anime="onview: -400; targets: >*; translateY: [24, 0]; opacity: [0, 1]; delay: anime.stagger(100, {start: 200});">
-                                    <div class="col-11 sm:col-10 lg:col">
-                                        <div class="about-image panel p-7 border border-2 border-black contrast-shadow-xl text-black -rotate-2">
-                                            <img loading="lazy" src="../assets/images/products/img19.jpg" alt="Image">
-                                        </div>
-                                    </div>
-                                    <div class="lg:col">
-                                        <div class="about-content vstack items-center gap-3 sm:gap-4 text-center">
-                                            <p style="font-family: sergio !important;" class="h5 sm:h3 xl:h2 mb-0 ls-0 text-uppercase -rotate-1">
-                                                <span style="z-index: 99;">Crafted for Perfection</span>
-                                            </p>
-                                            <div class="desc">
-                                                <p class="fs-6 sm:fs-5 xl:fs-4 mb-2">
-                                                    Every bite of Kamco Confectionery’s creations tells a story of quality, taste, and passion.
-                                                </p>
-                                                <p class="fs-6 sm:fs-5 xl:fs-4">
-                                                    From rich chocolates to delightful gums and biscuits, we bring happiness in every flavor.
-                                                </p>
-                                            </div>
-                                            <div class="buttons hstack justify-center gap-2 xl:gap-3">
-                                                <a style="background-color: #E31E23; color: white; font-family: aeonik;" 
-                                                    class="btn btn-md xl:btn-2xl btn-secondary px-3 border border-2 border-black contrast-shadow-sm hover:-rotate-2" 
-                                                    href="#">
-                                                    <span>Shop Now</span>
-                                                </a>
-                                                <a style="background-color: #FCE8E8; color: #E31E23;" 
-                                                    class="btn btn-primary-200 w-48px h-48px xl:w-64px xl:h-64px border border-2 border-black contrast-shadow-sm hover:-rotate-2" 
-                                                    href="https://www.instagram.com/kamcochewfoods/?hl=en">
-                                                    <i class="icon-2 xl:icon-3 unicon-logo-instagram-filled"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Section end -->
         </div>
 
         <!-- Wrapper end -->
 
         <!-- Footer start -->
-        <footer style="background-color: #FBE3DF;" id="uc-footer" class="uc-footer panel overflow-hidden">
+        <footer style="background-color: #FCE8E8;" id="uc-footer" class="uc-footer panel overflow-hidden">
             <div class="footer-outer">
                 <div class="footer-cta panel py-6 sm:py-8 lg:py-9 xl:py-10">
                     <img class="position-absolute start-0 bottom-0 w-100" src="../assets/images/bg/img1.png" alt="Image">
@@ -311,6 +283,7 @@
 
         <!-- include app script -->
         <script defer src="../assets/js/app.js"></script>
+        <script defer src="../assets/js/features.js"></script>
 
         <script>
             // Schema toggle via URL
@@ -329,74 +302,105 @@
                     image: "../assets/images/products/img1.jpeg",
                     title: "Twistix",
                     price: "₹10",
+                    category: 1,
                 },
                 {
                     id: 2,
                     image: "../assets/images/products/img2.jpeg",
                     title: "Strawberry Cremefills",
                     price: "₹10",
+                    category: 1,
                 },
                 {
                     id: 3,
                     image: "../assets/images/products/img3.jpeg",
                     title: "Chocolate Cremefills",
                     price: "₹10",
+                    category: 1,
                 },
                 {
                     id: 4,
                     image: "../assets/images/products/img4.jpeg",
                     title: "Penaut Cremefills",
                     price: "₹10",
+                    category: 1,
                 },
                 {
                     id: 5,
                     image: "../assets/images/products/img5.jpeg",
                     title: "Milk Cremefills",
                     price: "₹10",
+                    category: 1,
                 },
                 {
                     id: 6,
                     image: "../assets/images/products/img6.jpeg",
                     title: "Cookies n Creame",
                     price: "₹10",
+                    category: 1,
                 },
                 {
                     id: 7,
                     image: "../assets/images/products/img7.jpg",
                     title: "Choconut",
                     price: "₹10",
+                    category: 3,
                 },
                 {
                     id: 8,
                     image: "../assets/images/products/img8.jpg",
                     title: "Candies",
                     price: "₹10",
+                    category: 2,
                 },
                 {
                     id: 9,
                     image: "../assets/images/products/img9.jpg",
                     title: "Coolsmint",
                     price: "₹10",
+                    category: 2,
                 },
             ]
 
             const productsGrid = document.getElementById("products-grid");
-            if(productsGrid){
-                products.forEach(product => {
-                    productsGrid.innerHTML += `
-                        <div>
-                            <div style="border-radius: 20px;" class="features-item panel vstack gap-4 xl:gap-6 px-4 py-6 xl:px-5 xl:py-8 border border-2 border-black contrast-shadow-md text-black bg-white rotate-1">
-                                <div class="feature-item-image">
-                                    <img style="height: 300px; width: 280px; object-fit: cover;" class="image mx-auto" src="${product.image}" alt="Twistix">
-                                </div>
-                                <div class="feature-item-content">
-                                    <h6 style="color: #E31E23; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;" class="h5 xl:h6">${product.title}</h6>
+            const productsRenderer = (category) => {
+                productsGrid.innerHTML = "";
+                if(productsGrid){
+                    products.filter((el) => category === 0 || el.category === category).forEach(product => {
+                        productsGrid.innerHTML += `
+                            <div>
+                                <div id="shop-card" class="features-item panel vstack gap-4 xl:gap-6 px-4 py-6 xl:px-5 xl:py-8 border border-2 border-black contrast-shadow-md text-black bg-white rotate-1">
+                                    <div class="feature-item-image">
+                                        <img style="height: 300px; width: 280px; object-fit: cover;" class="image mx-auto" src="${product.image}" alt="Twistix">
+                                    </div>
+                                    <div class="feature-item-content">
+                                        <h6 style="color: #E31E23; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;" class="h5 xl:h6">${product.title}</h6>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    `;
-                });
+                        `;
+                    });
+                }
             }
+            productsRenderer(0);
+
+            const categorySelecter = document.getElementById("shop-header-container");
+            const selecters = document.querySelectorAll("#shop-header-container h2");
+
+            categorySelecter.addEventListener("click", (e) => {
+                console.log(e.target.tagName);
+                if (e.target.tagName === "H2") {
+                    selecters.forEach(selecter => {
+                        selecter.style.color = "white";
+                        selecter.querySelector("span").innerHTML = "";
+                    });
+
+                    e.target.style.color = "#FEE0A9";
+                    e.target.querySelector("span").innerHTML = `<img src="../assets/images/elements/coin.png" alt="">`;
+                    const selectedCategoryId = parseInt(e.target.id) || 0;
+                    productsRenderer(selectedCategoryId);
+                }
+            });
         </script>
     </body>
 

@@ -27,6 +27,64 @@ gsap.from(heroProduct3, {
   ease: "power2.inOut",
 });
 
+const tl = gsap.timeline({
+  scrollTrigger: {
+      trigger: "body",
+      start: "top top",
+      end: "bottom bottom",
+      scrub: 1,
+      markers: false
+  }
+});
+
+// Define interactive transitions
+tl.to(".animated-element", { 
+  top: "40%",
+  opacity: 1,
+  scale: 1.2,
+  rotate: -180,
+  ease: "power2.out"
+}) 
+.to(".animated-element", { 
+  rotate: 0,
+  opacity: 0,
+  top: "30%", 
+  right: "80%", 
+  scale: 1.4,
+  duration: 2,
+  ease: "power3.inOut"
+})
+.to(".animated-element", { 
+  opacity: 1,
+  top: "20%", 
+  right: "20%",
+  scale: 1,
+  rotate: 180,
+  duration: 2,
+  ease: "elastic.out(1, 0.5)"
+})
+.to(".animated-element", { 
+  top: "85%",
+  right: "10%",
+  scale: 1.5,
+  rotate: 270,
+  duration: 2,
+  ease: "back.inOut(2)"
+})
+.to(".animated-element", { 
+  top: "50%", 
+  right: "80%", 
+  scale: 1,
+  rotate: 360,
+  duration: 2,
+  ease: "power2.out"
+})
+.to(".animated-element", {
+  rotate: 480,
+  duration: 2,
+  ease: "power2.out"
+});
+
 const qualityMattersEl1 = document.getElementById("quality-matters-el1");
 const aboutSection = document.getElementById("about");
 
