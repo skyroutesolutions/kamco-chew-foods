@@ -4,28 +4,59 @@ const heroProduct1 = document.getElementById("hero-product1");
 const heroProduct2 = document.getElementById("hero-product2");
 const heroProduct3 = document.getElementById("hero-product3");
 
-gsap.from(heroProduct1, {
+const heroTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#hero-header",
+    start: "top 10%"
+  }
+});
+
+heroTl.from(heroProduct1, {
   duration: 2.5,
   left: "0%",
   transform: "rotate(10deg)",
   opacity: 0,
   ease: "power2.inOut",
-});
-
-gsap.from(heroProduct2, {
+}, "a")
+.from(heroProduct2, {
   duration: 2.5,
   right: "0%",
   transform: "rotate(-10deg)",
   opacity: 0,
   ease: "power2.inOut",
-});
-
-gsap.from(heroProduct3, {
+}, "a")
+.from(heroProduct3, {
   duration: 2.5,
   top: "40%",
   opacity: 0,
   ease: "power2.inOut",
-});
+}, "a")
+
+// TODO: Revert back the positions of hero elements
+
+// .to(heroProduct1, {
+//   delay: 2,
+//   duration: 4,
+//   left: "-100%",
+//   transform: "rotate(-20deg)",
+//   opacity: 0,
+//   ease: "power2.inOut",
+// }, "b")
+// .to(heroProduct2, {
+//   delay: 2,
+//   duration: 4,
+//   right: "-100%",
+//   transform: "rotate(-20deg)",
+//   opacity: 0,
+//   ease: "power2.inOut",
+// }, "b")
+// .to(heroProduct3, {
+//   delay: 2,
+//   duration: 4,
+//   top: "40%",
+//   opacity: 0,
+//   ease: "power2.inOut",
+// }, "b");
 
 const tl = gsap.timeline({
   scrollTrigger: {
@@ -91,38 +122,14 @@ const aboutSection = document.getElementById("about");
 gsap.to(qualityMattersEl1, {
   scrollTrigger: {
     trigger: aboutSection,
-    start: "10% 40%"
+    scrub: 2,
+    start: "top 40%", 
+    end: "80% 80%"
   },
   duration: 4,
+  opacity: 1,
   top: "75%",
-  left: "88%",
-  ease: "power2.inOut"
-});
-
-const rollis1 = document.querySelector("#rollis1");
-const rollis2 = document.querySelector("#rollis2");
-
-gsap.to(rollis1, {
-  scrollTrigger: {
-    trigger: aboutSection,
-    start: "top 10%", 
-    end: "60% center", 
-    scrub: 2,
-  },
-  top: "40%",
-  right: "100%",
-  ease: "power2.inOut"
-});
-
-gsap.to(rollis2, {
-  scrollTrigger: {
-    trigger: aboutSection,
-    start: "top 10%",  
-    end: "60% center", 
-    scrub: 2,  
-  },
-  bottom: "40%",
-  left: "100%",
+  left: "0%",
   ease: "power2.inOut"
 });
 
