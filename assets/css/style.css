@@ -90,6 +90,19 @@
   background-size: cover;
 }
 
+#roadmap #journey-left-section{
+  display: flex;
+  gap: 80px;
+}
+
+#roadmap #journey-left-section>div{
+  padding-right: 40px;
+}
+
+#roadmap .journey-footer{
+ font-size: 18px; 
+}
+
 .counter-container {
   color: #E31E23;
   font-family: aeonik !important;
@@ -368,8 +381,18 @@
   }
 
   #about{
-    margin: 15px 10px 0px 10px;
+    margin: 120px 10px 0px 10px;
     border-radius: 20px;
+  }
+
+  #roadmap #journey-left-section{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  #roadmap #journey-left-section>div{
+    padding-right: 0px;
   }
 
   #landing-page-teddy {

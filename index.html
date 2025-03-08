@@ -585,6 +585,10 @@
             } else if (getSchema === "light") {
                 setDarkMode(0);
             }
+
+            if(window.location.href.split("#")[1] === "faq"){
+                document.getElementsByClassName("animated-element")[0].style.display = "none";
+            }
         </script>
     </body>
 
