@@ -1,0 +1,26 @@
+[2025-02-05 12:30:29] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'srs_backend.blog_posts' doesn't exist
+[2025-02-05 13:00:11] Success: Blog post added for Author: dnndsn
+[2025-02-05 13:02:38] Success: Blog post added for Author: nnjdsnifd
+[2025-02-05 13:09:53] Author: dnndsn, Title: fdfffggg, Description: 
+[2025-02-05 13:09:53] Success: Blog post added for Author: dnndsn
+[2025-02-05 13:12:56] Description: 
+[2025-02-05 13:12:56] Author: nnjdsnifd, Title: dfdgtgvsdds, Description: 
+[2025-02-05 13:12:56] Success: Blog post added for Author: nnjdsnifd
+[2025-02-05 13:16:09] Description: 
+[2025-02-05 13:16:09] Author: Delhi Tour Packages, Title: Delhi Tour Packages, Description: 
+[2025-02-05 13:16:09] Success: Blog post added for Author: Delhi Tour Packages
+[2025-02-05 13:18:49] Description: 
+[2025-02-05 13:18:49] Author: Delhi Tour Packages, Title: Delhi Tour Packages, Description: 
+[2025-02-05 13:18:49] Success: Blog post added for Author: Delhi Tour Packages
+[2025-02-05 14:35:52] Update Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'contact' in 'field list'
+[2025-02-05 14:36:31] Update Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'contact' in 'field list'
+[2025-02-05 14:36:39] Update Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'contact' in 'field list'
+[2025-02-05 14:37:38] Update Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'contact_us' in 'field list'
+[2025-02-05 14:48:25] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'srs_backend.contacts' doesn't exist
+[2025-02-05 14:48:39] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'srs_backend.contacts' doesn't exist
+[2025-02-05 14:48:45] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'srs_backend.contacts' doesn't exist
+[2025-02-06 08:07:52] DB Error: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`srs_backend`.`tours`, CONSTRAINT `tours_ibfk_1` FOREIGN KEY (`designation_id`) REFERENCES `designations` (`id`))
+[2025-02-06 08:19:45] DB Error: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`srs_backend`.`tours`, CONSTRAINT `tours_ibfk_1` FOREIGN KEY (`designation_id`) REFERENCES `designations` (`id`))
+[2025-02-06 08:19:55] DB Error: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`srs_backend`.`tours`, CONSTRAINT `tours_ibfk_1` FOREIGN KEY (`designation_id`) REFERENCES `designations` (`id`))
+[2025-02-07 13:03:44] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'srs_backend.servicess' doesn't exist
+[2025-02-07 13:03:55] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'srs_backend.servicess' doesn't exist

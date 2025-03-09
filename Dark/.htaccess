@@ -1,0 +1,32 @@
+RewriteEngine on
+
+# Ensure the project directory is retained in URLs
+RewriteBase /skyroutesolution/skyroute_solution/
+
+# If the request is not a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# If the PHP file exists, rewrite the URL to remove .php
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# If the HTML file exists, rewrite the URL to remove .html
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+# Internally rewrite to .html if the request is missing an extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+<IfModule mod_deflate.c>
+    # Compress text, HTML, JavaScript, CSS, and XML
+    AddOutputFilterByType DEFLATE text/text text/html text/plain text/css application/javascript application/x-javascript application/xml application/json application/rss+xml
+    # Remove browser bugs (some versions of Internet Explorer)
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+<IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css application/javascript application/json application/xml application/xml+rss text/javascript
+</IfModule>

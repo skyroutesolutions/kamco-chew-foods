@@ -1,0 +1,14 @@
+{
+    "id": 2,
+    "name": "Mount Stok Kangri peak is temporarily closed for trekking and climbing",
+    "published_date": "2025-02-08",
+    "author": "dthhhh",
+    "description": "<p>ejij u e hsdgf dg uidduhududbbyftgvg<\/p>",
+    "created_at": "2025-02-07 22:10:00",
+    "duration": "3 min",
+    "overview": "<p>jheieje yehieh iehkdhjieohehejdshfjdsfhushjkdfudshahshd<\/p>",
+    "images": [
+        "1738946400_1.jpg",
+        "1738946400_1.jpg"
+    ]
+}
