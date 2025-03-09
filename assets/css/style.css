@@ -13,13 +13,29 @@
   src: url(../fonts/SergioTrendy.ttf);
 }
 
+.animated-element {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  transform: rotate(-360deg);
+  z-index: 999;
+}
+
+#uc-menu-panel{
+  z-index: 99999;
+}
+
 #header-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
-  z-index: 999;
+  z-index: 99999;
 }
 
 #wrapper{
@@ -74,6 +90,24 @@
   background-size: cover;
 }
 
+#roadmap #journey-left-section{
+  display: flex;
+  gap: 80px;
+}
+
+#roadmap #journey-left-section>div{
+  padding-right: 40px;
+}
+
+#roadmap .journey-footer{
+ font-size: 18px; 
+}
+
+.counter-container {
+  color: #E31E23;
+  font-family: aeonik !important;
+}
+
 .rollis{
   position: absolute;
   width: 25%;
@@ -92,6 +126,7 @@
 }
 
 #quality-matters-el1{
+  opacity: 0;
   filter: drop-shadow(0px 0px 5px black);
   width: 10%;
   position: absolute;
@@ -105,6 +140,7 @@
 
 #worldWideDomination-container{
   position: relative;
+  overflow: hidden;
   background-color: burlywood;
 }
 
@@ -116,12 +152,19 @@
   background-color: #062e46;
 }
 
-#landing-page-teddy{
+#landing-page-teddy {
+  width: 20%;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  transform: rotate(30deg);
   animation: float 3s ease-in-out infinite;
   animation-delay: 0.5s;
+  z-index: 99;
 }
 
 #text-bg-section{
+  margin-top: 30px;
   width: 100%;
   background-color: #0054A4;
   position: relative;
@@ -147,7 +190,16 @@
   border-radius: 20px;
   margin: 40px;
   position: relative;
-  /* overflow: hidden; */
+  overflow-x: hidden;
+}
+
+#features .section-outer {
+  background-color: rgb(255, 218, 127, 0.6);
+  border: 4px solid black;
+  border-radius: 20px;
+  margin: 160px 40px 40px 40px;
+  position: relative;
+  overflow: hidden;
 }
 
 #tokenomics{
@@ -167,8 +219,6 @@
   -webkit-text-stroke: 2.5px black;
 }
 
-
-
 #yellow-packet{
   position: absolute;
   top: 30px;
@@ -187,6 +237,13 @@
   z-index: 99;
   /* transform: rotate(20deg); */
   animation: rotate 3s ease-in-out infinite;
+}
+
+#subscribe {
+  background-color: #E31E23;
+  margin: 40px 40px 0px 40px;
+  border: 4px solid black;
+  border-radius: 30px;
 }
 
 #float-horizontal{
@@ -212,6 +269,23 @@
   background-color: transparent;
   background-size: cover;
   margin-bottom: 50px;
+}
+
+#contact #inputFields{
+  padding-right: 20px;
+}
+
+#contact .focus-icon {
+  height: 90%;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-cta{
+  position: relative;
+  z-index: 9;
 }
 
 @keyframes lefttoright {
@@ -260,7 +334,6 @@
   }
 }
 
-
 @keyframes bounceTeddy {
   0%, 50%, 100% {
     transform: translateY(0) ;
@@ -275,23 +348,28 @@
 }
 
 @media screen and (max-width: 768px){
+  #hero-container{
+    background-image: url(../images/bg/hero-mobile.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
   .section-inner{
     padding-top: 30px;
   }
-}
 
-@media screen and (max-width: 576px){
   #hero-product1 {
     height: 25%;
-    left: 0%;
-    top: 30%;
+    left: 4%;
+    top: 35%;
     transform: rotate(-12deg);
   }
   
   #hero-product2 {
     height: 25%;
-    right: 0%;
-    top: 30%;
+    right: 4%;
+    top: 35%;
     transform: rotate(8deg);
   }
   
@@ -299,12 +377,69 @@
     height: 35%;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 45%;
+    top: 43%;
   }
 
   #hero-content {
     position: absolute;
-    bottom: 25%;
+    bottom: 10%;
   }
 
+  #about{
+    margin: 120px 10px 0px 10px;
+    border-radius: 20px;
+  }
+  
+  .landing-about-section{
+    margin: 20px 10px 0px 10px !important;
+  }
+
+  #roadmap #journey-left-section{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  #roadmap #journey-left-section>div{
+    padding-right: 0px;
+  }
+
+  #landing-page-teddy {
+    width: 130px;
+    top: 30px;
+    z-index: 9;
+  }
+
+  .counter-container {
+    font-size: 32px !important;
+  }
+
+  #features #features-container {
+    margin: 15px 5px;
+  }
+
+  #features .section-outer {
+    margin: 140px 10px 5px 10px;
+  }
+
+  #yellow-packet{
+    top: -4px;
+    left: 10px;
+    height: 160px;
+    z-index: 0;
+  }
+
+  #tokenomics{
+    margin: 15px 5px 0px 5px;
+  }
+
+  #subscribe {
+    margin: 10px 5px 0px 5px;
+  }
+
+  #contact{
+    margin: 0px 10px;
+    margin-bottom: 0px;
+  }
+  
 }

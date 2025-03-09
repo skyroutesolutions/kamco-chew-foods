@@ -11,3 +11,18 @@
   bottom: 0%;
   right: 0%
 }
+
+@media screen and (max-width: 768px){
+  #chokoChunk{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+  }
+
+  #toon1{
+    width: 15%;
+    bottom: 0%;
+    right: 0%
+  }
+  
+}
