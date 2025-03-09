@@ -114,6 +114,11 @@ tl.to(".animated-element", {
   rotate: 480,
   duration: 2,
   ease: "power2.out"
+})
+.to(".animated-element", {
+  rotate: 600,
+  duration: 2,
+  ease: "power2.out"
 });
 
 const qualityMattersEl1 = document.getElementById("quality-matters-el1");

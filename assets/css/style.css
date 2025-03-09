@@ -283,6 +283,11 @@
   transform: translateY(-50%);
 }
 
+.footer-cta{
+  position: relative;
+  z-index: 9;
+}
+
 @keyframes lefttoright {
   0% {
     transform: translateX(0px);
