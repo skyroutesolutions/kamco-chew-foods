@@ -138,18 +138,18 @@ gsap.to(qualityMattersEl1, {
   ease: "power2.inOut"
 });
 
-const productCarousal = document.querySelector("#text-bg-section #container");
-gsap.to(productCarousal, {
-  scrollTrigger: {
-    trigger: productCarousal,
-    start: "top 10%",
-    end: "bottom 20%",
-    scrub: 3,
-    pin: true,
-  },
-  x: -1300,
-  ease: "power2.inOut",
-})
+// const productCarousal = document.querySelector("#products-carousal #container");
+// gsap.to(productCarousal, {
+//   scrollTrigger: {
+//     trigger: productCarousal,
+//     start: "top 10%",
+//     end: "bottom 20%",
+//     scrub: 3,
+//     pin: true,
+//   },
+//   x: -1300,
+//   ease: "power2.inOut",
+// })
 
 const globalPresenceText = document.querySelector("#global-presence-text");
 const targetSection = document.querySelector("#target-section");

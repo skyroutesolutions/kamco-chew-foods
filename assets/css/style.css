@@ -54,24 +54,24 @@
 }
 
 #hero-product1 {
-  height: 55%;
-  left: 18%;
-  top: 32%;
-  transform: rotate(-12deg);
+  height: 42%;
+  left: 26%;
+  top: 28%;
+  transform: rotate(-14deg);
 }
 
 #hero-product2 {
-  height: 55%;
-  right: 17%;
-  top: 32%;
+  height: 42%;
+  right: 24%;
+  top: 26%;
   transform: rotate(8deg);
 }
 
 #hero-product3 {
-  height: 75%;
+  height: 60%;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: 55%;
+  top: 45%;
 }
 
 #hero-content {
@@ -111,7 +111,7 @@
 .rollis{
   position: absolute;
   width: 25%;
-  transform: rotate(-50deg);
+  /* transform: rotate(-50deg); */
   
 }
 
@@ -163,23 +163,29 @@
   z-index: 99;
 }
 
-#text-bg-section{
+#products-carousal{
   margin-top: 30px;
   width: 100%;
   background-color: #0054A4;
   position: relative;
-  overflow: hidden;
+  overflow-x: scroll;
+  padding: 40px;
+  box-shadow: inset 0px 0px 10px 10px #FBE3DF;
 }
 
-#text-bg-section #container{
+#products-carousal::-webkit-scrollbar {
+  display: none;
+}
+
+#products-carousal #container{
   display: flex;
-  padding: 30px;
+  padding: 20px;
   gap: 80px;
   align-items: center;
 }
 
-#text-bg-section #container img{
-  height: 500px;
+#products-carousal #container img{
+  height: 400px;
   object-fit: cover;
   filter: drop-shadow(0px 0px 10px black);
 }

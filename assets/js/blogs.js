@@ -38,7 +38,7 @@ const blogsGrid = document.getElementById("blogs-grid");
 if (blogsGrid) {
   blogs.forEach((blog) => {
     blogsGrid.innerHTML += `
-            <a href="/kamco-chew-foods/main/blog.html?id=${blog.id}">
+            <a style="text-decoration: none; font-family: 'aeonik';" href="/kamco-chew-foods/main/blog.html?id=${blog.id}">
                 <div style="border-radius: 20px;" class="features-item panel vstack gap-4 xl:gap-6 px-4 py-6 xl:px-5 xl:py-8 border border-2 border-black contrast-shadow-md text-black bg-white rotate-1">
                     <div class="feature-item-image">
                         <img style="height: 300px; width: 280px; object-fit: cover;" class="image mx-auto" src="${
@@ -57,14 +57,13 @@ if (blogsGrid) {
   });
 }
 
-const aboutSection = document.getElementById("about");
 const rollis1 = document.querySelector("#rollis1");
 const rollis2 = document.querySelector("#rollis2");
 
 gsap.to(rollis1, {
   scrollTrigger: {
-    trigger: aboutSection,
-    start: "top 10%",
+    trigger: ".crafted-perfection-section",
+    start: "top 20%",
     end: "60% center",
     scrub: 2,
   },
@@ -75,8 +74,8 @@ gsap.to(rollis1, {
 
 gsap.to(rollis2, {
   scrollTrigger: {
-    trigger: aboutSection,
-    start: "top 10%",
+    trigger: ".crafted-perfection-section",
+    start: "top 20%",
     end: "60% center",
     scrub: 2,
   },
