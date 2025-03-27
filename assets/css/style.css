@@ -91,31 +91,31 @@
 }
 
 #hero-product1 {
-  height: 42%;
-  left: 26%;
+  height: 32%;
+  left: 30%;
   top: 28%;
   transform: rotate(-14deg);
 }
 
 #hero-product2 {
-  height: 42%;
-  right: 24%;
+  height: 32%;
+  right: 28%;
   top: 26%;
   transform: rotate(8deg);
 }
 
 #hero-product3 {
-  height: 60%;
+  height: 50%;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: 45%;
+  top: 40%;
 }
 
 #hero-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 
 #about{

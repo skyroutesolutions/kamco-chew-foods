@@ -109,7 +109,18 @@
                     <ul class="nav-y gap-narrow fw-medium fs-6" data-uc-nav>
                         <li><a href="/kamco-chew-foods/index.html">Home</a></li>
                         <li><a href="/kamco-chew-foods/main/about.html">About us</a></li>
-                        <li><a href="/kamco-chew-foods/main/shop.html">Our Products</a></li>
+                        <li>
+                            <a href="#" onclick="showProductsDropDown()">
+                                <span>Our Products</span>
+                                <img src="./assets/images/icons/image.png" width="16" alt="">
+                            </a>
+                        </li>
+                        <ul class="menu-panel-products-dropdown" style="padding-left: 14px; display: none; line-height: 30px;">
+                            <li><a href="/kamco-chew-foods/main/shop.html">All Products</a></li>
+                            <li><a href="/kamco-chew-foods/main/shop.html?category=chocolate">Chocolates</a></li>
+                            <li><a href="/kamco-chew-foods/main/shop.html?category=bundles">Bundles</a></li>
+                            <li><a href="/kamco-chew-foods/main/shop.html?category=offers">Offers</a></li>
+                        </ul>
                         <li><a href="/kamco-chew-foods/main/blogs.html">Blogs</a></li>
                         <li><a href="./assets/13_KAMCO SWEETS_01_OCT_2024.pdf" download="Kamco-Chew-Foods">Catalogue</a></li>
                         <li class="hr opacity-10 my-1"></li>
@@ -161,7 +172,10 @@
                                     <li><a href="/kamco-chew-foods/main/about.html">About us</a></li>
 
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle">Our Products</a>
+                                        <a href="#" class="dropdown-toggle">
+                                            Our Products
+                                            <img src="../assets/images/icons/down.png" width="18" alt="">
+                                        </a>
                                         <ul class="dropdown-menu">
                                             <li><a href="/kamco-chew-foods/main/shop.html">All Products</a></li>
                                             <li><a href="/kamco-chew-foods/main/shop.html?category=chocolate">Chocolates</a></li>
@@ -366,58 +380,38 @@
                             <div class="section-content panel">
                                 <div class="row child-cols-12 justify-center items-center g-5 sm:g-7 lg:g-9" data-anime="onview: -400; targets: >*; translateY: [24, 0]; opacity: [0, 1]; delay: anime.stagger(100, {start: 200});">
                                     <div class="col-11 sm:col-10 lg:col">
-                                        <div class="tokenomics-image panel p-4 border border-2 border-black contrast-shadow-xl text-black -rotate-2" style="background-color: #FCE8E8">
+                                        <div class="tokenomics-image panel border border-2 border-black contrast-shadow-xl text-black -rotate-2" style="background-color: #FCE8E8">
                                             <img src="./assets/MAP_GIF.gif" alt="Image">
                                         </div>
                                     </div>
                                     <div class="lg:col">
                                         <div class="global-presence-content vstack items-center gap-4 xl:gap-6 text-center">
-                                            <h2 style="font-family: sergio !important;" class="h5 sm:h3 xl:h2 mb-0 ls-0 text-uppercase -rotate-1">Our Marts 🌍</h2>
+                                            <h2 style="font-family: sergio !important;" class="h5 sm:h3 xl:h2 mb-0 ls-0 text-uppercase -rotate-1">Worldwide Domination🌍</h2>
                                             <div class="panel">
                                                 <div class="row child-cols-auto justify-center g-2 sm:g-3 xl:g-4">
                                                     <div>
                                                         <div class="p-2 xl:p-3 border border-2 border-black contrast-shadow-sm bg-secondary-100 rotate-2">
-                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">Delhi</h5>
+                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">🇳🇬 Nigeria</h5>
                                                         </div>
                                                     </div>
                                                     <div>
                                                         <div class="p-2 xl:p-3 border border-2 border-black contrast-shadow-sm text-black -rotate-1" style="background-color: #FCE8E8">
-                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">Raipur</h5>
+                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">🇸🇦 Saudi Arabia</h5>
                                                         </div>
                                                     </div>
                                                     <div>
                                                         <div class="p-2 xl:p-3 border border-2 border-black contrast-shadow-sm text-black -rotate-1" style="background-color: #FCE8E8">
-                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">Jabalpur</h5>
+                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">🇦🇪 UAE</h5>
                                                         </div>
                                                     </div>
                                                     <div>
                                                         <div class="p-2 xl:p-3 border border-2 border-black contrast-shadow-sm text-black bg-secondary-100 rotate-2">
-                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">Guwahati</h5>
+                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">🇨🇦 Canada</h5>
                                                         </div>
                                                     </div>
                                                     <div>
                                                         <div class="p-2 xl:p-3 border border-2 border-black contrast-shadow-sm text-black bg-secondary-100 rotate-2">
-                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">Nagpur</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="p-2 xl:p-3 border border-2 border-black contrast-shadow-sm text-black -rotate-1" style="background-color: #FCE8E8">
-                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">Kantabanji</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="p-2 xl:p-3 border border-2 border-black contrast-shadow-sm text-black -rotate-1" style="background-color: #FCE8E8">
-                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">Ulhasnagar</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="p-2 xl:p-3 border border-2 border-black contrast-shadow-sm text-black -rotate-1" style="background-color: #FCE8E8">
-                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">Hyderabad</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="p-2 xl:p-3 border border-2 border-black contrast-shadow-sm bg-secondary-100 rotate-2">
-                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">Dubai</h5>
+                                                            <h5 style="font-family: aeonik !important;" class="h7 sm:h6 xl:h5 m-0 ft-primary fw-semibold">🇺🇸 USA</h5>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -446,7 +440,7 @@
             <!-- Section end -->
 
             <!-- Text Marquee Start -->
-            <div class="panel z-99">
+            <!-- <div class="panel z-99">
                 <div class="position-absolute top-0 start-0 w-100 h-1/2"></div>
                 <div class="position-absolute bottom-0 start-0 w-100 h-1/2" style="background-color: #dbf2ff"></div>
                 <div class="py-1 rotate-1 bg-white">
@@ -489,7 +483,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Text Marquee end -->
 
@@ -510,12 +504,12 @@
                                     <!-- Testimonial 1 -->
                                     <div>
                                         <div style="border-radius: 20px;" class="testimonial-item panel vstack gap-4 xl:gap-6 px-4 py-6 xl:px-5 xl:py-8 border border-2 border-black contrast-shadow-md text-black bg-white rotate-1">
-                                            <div class="testimonial-image">
+                                            <!-- <div class="testimonial-image">
                                                 <img class="image h-60px xl:h-150px mx-auto rounded-circle" src="https://randomuser.me/api/portraits/women/45.jpg" alt="Customer">
-                                            </div>
+                                            </div> -->
                                             <div class="testimonial-content">
                                                 <p style="font-family: aeonik;" class="desc fs-5 xl:fs-4">"Kamco Chew Foods has the best chocolates I’ve ever tasted! The quality is simply outstanding."</p>
-                                                <h4 class="fs-6 xl:fs-5 fw-bold mt-2">Sarah Thompson</h4>
+                                                <h4 style="font-family: aeonik !important;" class="fs-6 xl:fs-5 fw-bold mt-2">Sarah Thompson</h4>
                                                 <p class="fs-6 text-muted">Chocolate Enthusiast</p>
                                             </div>
                                         </div>
@@ -524,12 +518,12 @@
                                     <!-- Testimonial 2 -->
                                     <div>
                                         <div style="border-radius: 20px;" class="testimonial-item panel vstack gap-4 xl:gap-6 px-4 py-6 xl:px-5 xl:py-8 border border-2 border-black contrast-shadow-md text-black bg-white -rotate-1">
-                                            <div class="testimonial-image">
+                                            <!-- <div class="testimonial-image">
                                                 <img class="image h-60px xl:h-150px mx-auto rounded-circle" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
-                                            </div>
+                                            </div> -->
                                             <div class="testimonial-content">
                                                 <p style="font-family: aeonik;" class="desc fs-5 xl:fs-4">"Their bubble gum flavors are absolutely amazing. It reminds me of my childhood!"</p>
-                                                <h4 class="fs-6 xl:fs-5 fw-bold mt-2">James Carter</h4>
+                                                <h4 style="font-family: aeonik !important;" class="fs-6 xl:fs-5 fw-bold mt-2">James Carter</h4>
                                                 <p class="fs-6 text-muted">Gum Lover</p>
                                             </div>
                                         </div>
@@ -538,12 +532,12 @@
                                     <!-- Testimonial 3 -->
                                     <div>
                                         <div style="border-radius: 20px;" class="testimonial-item panel vstack gap-4 xl:gap-6 px-4 py-6 xl:px-5 xl:py-8 border border-2 border-black contrast-shadow-md text-black bg-white rotate-1">
-                                            <div class="testimonial-image">
+                                            <!-- <div class="testimonial-image">
                                                 <img class="image h-60px xl:h-150px mx-auto rounded-circle" src="https://randomuser.me/api/portraits/women/30.jpg" alt="Customer">
-                                            </div>
+                                            </div> -->
                                             <div class="testimonial-content">
                                                 <p style="font-family: aeonik;" class="desc fs-5 xl:fs-4">"I love how Kamco Chew Foods ensures high quality and international standards. A must-try!"</p>
-                                                <h4 class="fs-6 xl:fs-5 fw-bold mt-2">Emma Williams</h4>
+                                                <h4 style="font-family: aeonik !important;" class="fs-6 xl:fs-5 fw-bold mt-2">Emma Williams</h4>
                                                 <p class="fs-6 text-muted">Food Blogger</p>
                                             </div>
                                         </div>

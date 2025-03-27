@@ -17,16 +17,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const dropdownToggle = document.querySelector(".dropdown-toggle");
-            const dropdownMenu = document.querySelector(".dropdown-menu");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
 
-            dropdownToggle.addEventListener("click", function (e) {
-                e.preventDefault();
-                dropdownMenu.classList.toggle("show");
-            });
+    dropdownToggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        dropdownMenu.classList.toggle("show");
+    });
 
-            // Close dropdown when clicking outside
-            document.addEventListener("click", function (e) {
-                if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
-                    dropdownMenu.classList.remove("show");
-                }
-            });
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function (e) {
+    if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.classList.remove("show");
+    }
+});
+
+let isProductMenuPanelDropDownShown = true;
+const productsDropDown = document.querySelector(".menu-panel-products-dropdown");
+const showProductsDropDown = () => {
+    console.log("HEY")
+    if(isProductMenuPanelDropDownShown) {
+        productsDropDown.style.display = "block";
+    } else{
+        productsDropDown.style.display = "none";
+    }
+    isProductMenuPanelDropDownShown = !isProductMenuPanelDropDownShown
+}
