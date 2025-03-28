@@ -14,6 +14,29 @@ document.addEventListener("DOMContentLoaded", function () {
             header.style.boxShadow = "none";
         }
     });
+
+    const container = document.querySelector("#products-carousal #container");
+    let scrollAmount = 0;
+    const scrollStep = 330;
+    const scrollSpeed = 4000;
+
+    function autoScroll() {
+        if (container) {
+            scrollAmount += scrollStep;
+            if (scrollAmount >= container.scrollWidth - container.clientWidth) {
+                scrollAmount = 0;
+            }
+            // container.scrollTo({
+            //     left: scrollAmount,
+            //     behavior: "smooth"
+            // });
+
+            container.style.scrollBehavior = "smooth";
+            container.style.left = `${-scrollAmount}px`;
+        }
+    }
+
+    setInterval(autoScroll, scrollSpeed);
 });
 
 const dropdownToggle = document.querySelector(".dropdown-toggle");

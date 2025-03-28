@@ -175,6 +175,46 @@
   animation: rotate 3s ease-in-out infinite;
 }
 
+#certifications {
+  text-align: center;
+  font-family: aeonik !important;
+  padding: 80px 30px;
+}
+
+#certifications h2 {
+  font-family: sergio !important;
+}
+
+#certifications .certificates {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+#certifications .certificates>div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#certifications .certificates img {
+  height: 140px;
+  width: 140px;
+  /* max-width: 100%; */
+  object-fit: contain;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
 #worldWideDomination-container{
   position: relative;
   overflow: hidden;
@@ -219,6 +259,9 @@
   padding: 20px;
   gap: 80px;
   align-items: center;
+  position: relative;
+  left: 0px;
+  transition: left 1s ease-in-out;
 }
 
 #products-carousal #container img{
@@ -463,6 +506,21 @@
 
   #features .section-outer {
     margin: 140px 10px 5px 10px;
+  }
+
+  #certifications {
+    text-align: center;
+    font-family: aeonik !important;
+    padding: 80px 30px;
+  }
+
+  #certifications .certificates {
+    flex-direction: row;
+  }
+
+  #certifications .certificates img {
+    height: 100px;
+    width: 100px;
   }
 
   #yellow-packet{
