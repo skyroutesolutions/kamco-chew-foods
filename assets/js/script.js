@@ -72,11 +72,21 @@ const catalogueDropdownToggle = document.querySelector(".catalogueDropdown-toggl
 let isProductMenuPanelDropDownShown = true;
 const productsDropDown = document.querySelector(".menu-panel-products-dropdown");
 const showProductsDropDown = () => {
-    console.log("HEY")
     if(isProductMenuPanelDropDownShown) {
         productsDropDown.style.display = "block";
     } else{
         productsDropDown.style.display = "none";
     }
     isProductMenuPanelDropDownShown = !isProductMenuPanelDropDownShown
+}
+
+let isCatalogueMenuPanelDropDownShown = true;
+const catalogueDropDown = document.querySelector(".menu-panel-catalogues-dropdown");
+const showCatalogueDropDown = () => {
+    if(isCatalogueMenuPanelDropDownShown) {
+        catalogueDropDown.style.display = "block";
+    } else{
+        catalogueDropDown.style.display = "none";
+    }
+    isCatalogueMenuPanelDropDownShown = !isCatalogueMenuPanelDropDownShown
 }
