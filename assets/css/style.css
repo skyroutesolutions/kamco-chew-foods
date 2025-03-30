@@ -71,6 +71,37 @@
   background-color: #f0f0f0;
 }
 
+.catalogueDropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  min-width: 300px;
+  max-height: 250px;
+  overflow-y: scroll;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.catalogueDropdown-menu li {
+  padding: 8px 12px;
+}
+
+.catalogueDropdown-menu li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.catalogueDropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
 .show {
   display: block;
 }

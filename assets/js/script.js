@@ -54,6 +54,21 @@ const dropdownToggle = document.querySelector(".dropdown-toggle");
     }
 });
 
+const catalogueDropdownToggle = document.querySelector(".catalogueDropdown-toggle");
+    const catalogueDropdownMenu = document.querySelector(".catalogueDropdown-menu");
+
+    catalogueDropdownToggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        catalogueDropdownMenu.classList.toggle("show");
+    });
+
+    // Close catalogueDropdown when clicking outside
+    document.addEventListener("click", function (e) {
+    if (!catalogueDropdownToggle.contains(e.target) && !catalogueDropdownMenu.contains(e.target)) {
+        catalogueDropdownMenu.classList.remove("show");
+    }
+});
+
 let isProductMenuPanelDropDownShown = true;
 const productsDropDown = document.querySelector(".menu-panel-products-dropdown");
 const showProductsDropDown = () => {
