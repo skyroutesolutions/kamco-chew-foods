@@ -278,7 +278,7 @@
   position: relative;
   overflow-x: scroll;
   padding: 40px;
-  box-shadow: inset 0px 0px 10px 10px #FBE3DF;
+  /* box-shadow: inset 0px 0px 10px 10px #FBE3DF; */
 }
 
 #products-carousal::-webkit-scrollbar {
@@ -296,7 +296,7 @@
 }
 
 #products-carousal #container img{
-  height: 400px;
+  height: 340px;
   object-fit: cover;
   filter: drop-shadow(0px 0px 10px black);
 }

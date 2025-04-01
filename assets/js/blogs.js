@@ -38,7 +38,7 @@ const blogsGrid = document.getElementById("blogs-grid");
 if (blogsGrid) {
   blogs.forEach((blog) => {
     blogsGrid.innerHTML += `
-            <a style="text-decoration: none; font-family: 'aeonik';" href="/kamco-chew-foods/main/blog.html?id=${blog.id}">
+            <a style="text-decoration: none; font-family: 'aeonik';" href="/main/blog.html?id=${blog.id}">
                 <div style="border-radius: 20px;" class="features-item panel vstack gap-4 xl:gap-6 px-4 py-6 xl:px-5 xl:py-8 border border-2 border-black contrast-shadow-md text-black bg-white rotate-1">
                     <div class="feature-item-image">
                         <img style="height: 300px; width: 280px; object-fit: cover;" class="image mx-auto" src="${
