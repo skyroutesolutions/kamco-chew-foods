@@ -1,13 +1,3 @@
-// Schema toggle via URL
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const getSchema = urlParams.get("schema");
-if (getSchema === "dark") {
-  setDarkMode(1);
-} else if (getSchema === "light") {
-  setDarkMode(0);
-}
-
 const blogs = [
   {
     id: 1,

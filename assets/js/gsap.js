@@ -151,22 +151,22 @@ gsap.to(qualityMattersEl1, {
 //   ease: "power2.inOut",
 // })
 
-const globalPresenceText = document.querySelector("#global-presence-text");
-const targetSection = document.querySelector("#target-section");
+// const globalPresenceText = document.querySelector("#global-presence-text");
+// const targetSection = document.querySelector("#target-section");
 
-gsap.to(globalPresenceText, {
-  scrollTrigger: {
-      trigger: "#features",
-      start: "80% center",
-      end: "bottom 40%",
-      scrub: 3
-  },
-  x: -400,
-  y: 500,
-  scale: 2,
-  opacity: 0.8,
-  ease: "power2.inOut"
-});
+// gsap.to(globalPresenceText, {
+//   scrollTrigger: {
+//       trigger: "#features",
+//       start: "80% center",
+//       end: "bottom 40%",
+//       scrub: 3
+//   },
+//   x: -400,
+//   y: 500,
+//   scale: 2,
+//   opacity: 0.8,
+//   ease: "power2.inOut"
+// });
 
 const cont = document.querySelector("#worldWideDomination-container");
 const videoOverlays = document.querySelectorAll("#videoOverlay div");
@@ -198,10 +198,10 @@ gsap.to(videoOverlays[1], {
       document.querySelector("#worldWideDomination-container video").setAttribute( "autoplay", "true" )
     },
     onEnterBack: () => {
-      globalPresenceText.style.display= "block";
+      // globalPresenceText.style.display= "block";
     },
     onLeave: () => {
-      globalPresenceText.style.display= "none";
+      // globalPresenceText.style.display= "none";
     },
   },
   x: "100%",
