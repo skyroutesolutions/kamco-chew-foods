@@ -74,6 +74,12 @@
         <link rel="stylesheet" href="../assets/css/theme/theme-two.min.purge.css">
         <link rel="stylesheet" href="../assets/css/style.css">
 
+        <!-- SweetAlert2 CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
         <!-- include scripts -->
         <script src="../assets/js/uni-core/js/uni-core-bundle.min.js"></script>
     </head>
@@ -289,7 +295,8 @@
                             </div>
                         </header>
                         <div class="page-content panel fs-6 md:fs-5">
-                            <form class="vstack items-center gap-2 sm:gap-3 max-w-md mx-auto">
+                            <form id="contact-form" class="vstack items-center gap-2 sm:gap-3 max-w-md mx-auto contact-form">
+
                                 <div class="w-full">
                                     <div class="row child-cols-12 sm:child-cols-6 g-3">
                                         <div style="position: relative;">
@@ -539,6 +546,43 @@
             }
 
         </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $('#contact-form').submit(function(e) {
+                e.preventDefault();
+                var contactId = $('#contact-id').val();
+                var formData = {
+                    id: contactId,
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    subject: $('#subject').val(),
+                    message: $('#message').val()
+                };
+
+                var url =  '../Dark/backend/add_contact.php';
+
+                $.post(url, formData, function(response) { 
+    Swal.fire({
+        title: 'Success!',
+        text: response,
+        icon: 'success',
+        confirmButtonText: 'OK'
+    }).then(() => {
+        $('#contactModal').modal('hide');
+        loadContacts();
+    });
+}).fail(function(jqXHR, textStatus, errorThrown) {
+    Swal.fire({
+        title: 'Error!',
+        text: 'An error occurred: ' + errorThrown,
+        icon: 'error',
+        confirmButtonText: 'OK'
+    });
+});
+
+            });  </script>
+    
     </body>
 
 <!-- Mirrored from html.reactheme.com/muchwow/main/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Feb 2025 10:46:48 GMT -->
