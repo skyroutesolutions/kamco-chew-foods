@@ -49,27 +49,30 @@ if (blogsGrid) {
 
 const rollis1 = document.querySelector("#rollis1");
 const rollis2 = document.querySelector("#rollis2");
+const craftedPerfectionSection = document.querySelector(".crafted-perfection-section");
 
-gsap.to(rollis1, {
-  scrollTrigger: {
-    trigger: ".crafted-perfection-section",
-    start: "top 20%",
-    end: "60% center",
-    scrub: 2,
-  },
-  top: "40%",
-  right: "100%",
-  ease: "power2.inOut",
-});
-
-gsap.to(rollis2, {
-  scrollTrigger: {
-    trigger: ".crafted-perfection-section",
-    start: "top 20%",
-    end: "60% center",
-    scrub: 2,
-  },
-  bottom: "40%",
-  left: "100%",
-  ease: "power2.inOut",
-});
+if(craftedPerfectionSection){
+  gsap.to(rollis1, {
+    scrollTrigger: {
+      trigger: ".crafted-perfection-section",
+      start: "top 20%",
+      end: "60% center",
+      scrub: 2,
+    },
+    top: "40%",
+    right: "100%",
+    ease: "power2.inOut",
+  });
+  
+  gsap.to(rollis2, {
+    scrollTrigger: {
+      trigger: ".crafted-perfection-section",
+      start: "top 20%",
+      end: "60% center",
+      scrub: 2,
+    },
+    bottom: "40%",
+    left: "100%",
+    ease: "power2.inOut",
+  });
+}
